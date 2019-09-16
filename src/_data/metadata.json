@@ -1,0 +1,18 @@
+{
+	"title": "Nick Trombley",
+	"url": "https://nicktrombley.design/",
+	"description": "A website for a web designer.",
+	"keywords": "design, development, ux, making",
+	"feed": {
+		"title": "Nick Trombley's Blog",
+		"subtitle": "A website for a web designer.",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"url": "https://nicktrombley.design/feed/feed.xml",
+		"id": "https://nicktrombley.design/"
+	},
+	"author": {
+		"name": "Nick Trombley",
+		"email": "trombley.nick@gmail.com"
+	}
+}

@@ -38,6 +38,17 @@ p {
 	margin-bottom: 1rem;
 }
 
+.heading-link {
+	text-decoration: none;
+	font-size: 0.85em;
+	margin-left: 0.25em;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+.heading-link:hover {
+	opacity: 1;
+}
+
 .boxed {
 	/* Using a border for all sides adds to the height, which disrupts a strict vertical rhythm. */
 	border-left: 1px solid var(--border);
