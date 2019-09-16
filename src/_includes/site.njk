@@ -11,20 +11,18 @@ url: https://nicktrombley.design/
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>{{ title }}</title>
+		<link rel="icon" href="/favicon.png" type="image/x-icon" />
 		<!-- SEO -->
 		<meta name="description" content="{{ description }}" />
 		<link rel="canonical" href="{{ url }}" />
-		<meta property="og:url" content="{{ url }}/" />
+		<meta property="og:url" content="{{ url }}" />
 		<meta property="og:title" content="{{ title }}" />
 		<meta property="og:description" content="{{ description }}" />
-		<!-- <meta
-			property="og:image"
-			content="https://nicktrombley.design/images/something.png"
-		/> -->
+		<meta property="og:image" content="/images/site.png" />
 		<meta property="og:type" content="website" />
 		<meta name="keywords" content="design, development, ux, making" />
 		<!-- Layout / function -->
-		<link rel="stylesheet" type="text/css" href="site.css" />
+		<link rel="stylesheet" type="text/css" href="/site.css" />
 	</head>
 	<body>
 		{{ content | safe }}
