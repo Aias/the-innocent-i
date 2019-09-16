@@ -1,3 +1,58 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+:root {
+	--layer-bg: #f0f0f0;
+	--layer-grid: #fafafa;
+	--border: firebrick;
+}
+
+html {
+	font-size: 100%;
+	background-color: var(--layer-bg);
+}
+
 body {
-	margin: 0;
+	margin: 2rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.boxed {
+	/* Using a border for all sides adds to the height, which disrupts a strict vertical rhythm. */
+	border-left: 1px solid var(--border);
+	border-right: 1px solid var(--border);
+	box-shadow: 0 1px 0 var(--border) inset, 0 -1px 0 var(--border) inset;
+}
+
+.gridded {
+	background-size: 1rem 1rem;
+	background-image: linear-gradient(
+			to right,
+			var(--layer-grid) 1px,
+			transparent 1px
+		),
+		linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
+	/* The following statement helps put text directly on the baseline. */
+	/* background-position-y: 0.5rem; */
 }
