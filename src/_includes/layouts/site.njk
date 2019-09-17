@@ -9,6 +9,7 @@
 		<link rel="icon" href="/favicon.png" type="image/x-icon" />
 		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml"
 			title="{{ metadata.feed.title }}">
+		<meta name="theme-color" content="{{ metadata.themeColor }}">
 		<!-- SEO -->
 		<meta name="description" content="{{ renderData.description or description or metadata.description }}" />
 		<link rel="canonical" href="{{ metadata.url }}" />
