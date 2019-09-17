@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
 		permalinkClass: 'heading-link',
 		permalinkSymbol: '⚓',
 		permalinkSpace: false
+		// permalinkBefore: false
 	};
 
 	eleventyConfig.setLibrary(
