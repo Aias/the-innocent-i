@@ -13,7 +13,7 @@
 		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
 		'Courier New', Courier, monospace;
 
-	--layer-bg: #f0f0f0;
-	--layer-grid: #fafafa;
+	--layer-bg: #efefef;
+	--layer-grid: #fcfcfc;
 	--border: hsla(0, 0%, 0%, 0.85);
 }

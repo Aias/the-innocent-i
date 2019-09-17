@@ -1,68 +1,72 @@
-html {
-	background-color: #fcfcfc;
-	font-size: 32px;
-}
+.iso-container {
+	--size: 2rem;
 
-body {
-	margin: 0;
-	height: 500px;
+	height: 20rem;
 	position: relative;
-	background-color: #ddd;
 	overflow: hidden;
+	background-color: var(--layer-bg);
 }
 
-div {
-	height: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
-.grid-face {
-	background-size: 1rem 1rem;
+.grid-face--lined {
+	width: 1000vw;
+	height: 1000vh;
+	min-height: 500%;
+	top: -100rem !important;
+	left: -100rem !important;
+	transform: translate(-100vw, -100vh);
+	background-size: var(--size) var(--size);
 	background-image: linear-gradient(
 			to right,
 			var(--layer-grid) 1px,
 			transparent 1px
 		),
 		linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
-	--plane-angle-x: 30deg;
-	--plane-angle-z: -60deg;
+}
+
+.grid-face {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	transform-origin: 0 0;
+}
+
+.group-offset {
 	display: flex;
 }
 
-.grid-face > span {
+.group-offset span {
 	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	background-color: rgba(0, 0, 0, 0.05);
-	border: 1px solid rgba(0, 0, 0, 0.25);
+	width: var(--size);
+	height: var(--size);
+	background-color: rgba(0, 0, 0, 0.95);
+	color: var(--layer-bg);
+	border: 1px solid rgba(255, 255, 255, 0.25);
 	font-family: var(--font-stack-mono);
 	line-height: 1;
-	font-size: 0.75rem;
+	font-size: calc(var(--size) * 0.75);
 	text-align: center;
-	padding-top: 0.15em;
+	padding-top: calc(var(--size) * 0.1);
 }
 
 .grid-face--xy {
-	--layer-grid: rgba(255, 0, 0, 0.5);
-	transform: skew(30deg) rotate(30deg) scaleX(0.8660254);
-	height: calc(100% / 0.8660254);
-	/* display: none; */
+	transform: scaleY(0.8660254) skewY(30deg) scaleY(calc(1 / 0.8660254));
 }
 .grid-face--yz {
-	--layer-grid: rgba(0, 0, 0, 0.25);
-	transform: skew(-30deg) rotate(-30deg) scaleX(0.8660254);
-	height: calc(100% / 0.8660254);
-	padding: 5rem 0 0 5rem;
-	/* display: none; */
+	transform: scaleY(0.8660254) skewY(-30deg) scaleY(calc(1 / 0.8660254));
 }
 .grid-face--xz {
+	transform: scaleY(0.8660254) rotate(30deg) skew(-30deg)
+		scaleX(calc(1 / 0.8660254));
+}
+
+.debug .grid-face--xy {
+	--layer-grid: rgba(255, 0, 0, 0.5);
+}
+.debug .grid-face--yz {
+	--layer-grid: rgba(0, 0, 0, 0.25);
+}
+.debug .grid-face--xz {
 	--layer-grid: rgba(0, 0, 255, 0.5);
-	transform: scale(0.8660254) skew(30deg) rotate(-60deg);
-	padding-top: 10rem;
-	display: none;
 }
