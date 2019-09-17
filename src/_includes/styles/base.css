@@ -4,10 +4,21 @@ html {
 }
 
 body {
-	margin: 2rem;
+	margin: 2rem 0;
+	display: grid;
+	grid-template-columns:
+		[gutter-left-start] 2rem [gutter-left-end main-start] repeat(
+			auto-fit,
+			2rem
+		)
+		[main-end gutter-right-start] 2rem [gutter-right-end];
 	font-size: 1rem;
 	line-height: 1.5;
 	font-family: var(--font-stack-serif);
+}
+
+main {
+	grid-column: main;
 }
 
 h1 {

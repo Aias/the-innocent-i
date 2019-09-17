@@ -24,14 +24,16 @@
 		{% if pageStyle %}
 		<style type="text/css">
 		{% set css %}
-		{% include 'styles/pages/playground.css' %}
+		{% include 'styles/pages/' + pageStyle + '.css' %}
 		{% endset %}{{ css | cssmin | safe }}
 		</style>
 		{% endif %}
 	</head>
 
 	<body>
-		{{ content | safe }}
+		<main>
+			{{ content | safe }}
+		</main>
 	</body>
 
 </html>

@@ -1,0 +1,75 @@
+---
+layout: site
+pageStyle: blocks
+---
+
+<div class="iso-container unplaced">
+	<div class="grid-face grid-face--xy grid-face--lined"></div>
+	<div class="grid-face grid-face--yz grid-face--lined"></div>
+	<div class="grid-face grid-face--xz grid-face--lined"></div>
+
+	<div class="grid-face grid-face--xy">
+		<div data-offset="1,1" class="group-offset">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="grid-face grid-face--yz">
+		<div data-offset="6,7" class="group-offset">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="grid-face grid-face--xz">
+		<div data-offset="2,0" class="group-offset">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div data-offset="3,-1" class="group-offset">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div data-offset="4,-2" class="group-offset">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div data-offset="5,-3" class="group-offset">
+			<span></span>
+			<span></span>
+		</div>
+		<div data-offset="6,-4" class="group-offset">
+			<span></span>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.querySelectorAll('.group-offset').forEach(function(el) {
+		var offsetString = el.getAttribute('data-offset');
+		if (offsetString) {
+			var arr = offsetString.split(',');
+			var transform =
+				'transform: translate(calc(' +
+				arr[0] +
+				' * var(--size)), calc(' +
+				arr[1] +
+				' * var(--size)));';
+			el.setAttribute('style', transform);
+		}
+	});
+	document.querySelectorAll('.iso-container').forEach(function(el) {
+		el.classList.toggle('unplaced');
+	});
+</script>
