@@ -2,11 +2,15 @@
 // https://github.com/11ty/eleventy-base-blog/blob/bbad06deaecd101a5e38ead1e59ad5087eccaf7a/.eleventy.js
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const CleanCSS = require('clean-css');
 
 module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addFilter('cssmin', code => {
+		return new CleanCSS({}).minify(code).styles;
+	});
 
 	/* Markdown plugins */
 	let markdownIt = require('markdown-it');
@@ -42,6 +46,7 @@ module.exports = function(eleventyConfig) {
 		dir: {
 			input: 'src',
 			includes: '_includes',
+			layouts: '_includes/layouts',
 			data: '_data',
 			output: '_site'
 		}

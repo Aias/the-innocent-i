@@ -11,7 +11,7 @@
 			title="{{ metadata.feed.title }}">
 		<!-- SEO -->
 		<meta name="description" content="{{ renderData.description or description or metadata.description }}" />
-		<link rel="canonical" href="{{ url }}" />
+		<link rel="canonical" href="{{ metadata.url }}" />
 		<meta property="og:url" content="{{ metadata.url }}" />
 		<meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
 		<meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />

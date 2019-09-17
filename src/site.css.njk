@@ -1,0 +1,9 @@
+---
+permalink: site.css
+---
+{% set css %}
+{% include 'styles/vars.css' %}
+{% include 'styles/reset.css' %}
+{% include 'styles/base.css' %}
+{% include 'styles/helpers.css' %}
+{% endset %}{{ css | cssmin | safe }}
