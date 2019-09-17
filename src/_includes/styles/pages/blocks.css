@@ -1,12 +1,18 @@
 .iso-container {
 	--size: 2rem;
 
-	height: 12rem;
-	width: 24rem;
+	height: calc(6 * var(--size));
+	width: calc(12 * var(--size));
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	background-color: var(--layer-bg);
+}
+
+@media (max-width: 500px) {
+	.iso-container {
+		--size: 1rem;
+	}
 }
 
 .unplaced span {
@@ -20,7 +26,7 @@
 	top: -100rem !important;
 	left: -100rem !important;
 	transform: translate(-100vw, -100vh);
-	background-size: calc(var(--size) / 2) calc(var(--size) / 2);
+	background-size: 1rem 1rem;
 	background-image: linear-gradient(
 			to right,
 			var(--layer-grid) 1px,
