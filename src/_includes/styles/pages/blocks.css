@@ -58,7 +58,7 @@
 	height: var(--size);
 	background-color: var(--grid-face-bg);
 	border: 1px ridge rgba(255, 255, 255, 0.15);
-	box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.15);
+	/* box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.15); */
 	/* font-family: var(--font-stack-mono);
 	line-height: 1;
 	font-size: calc(var(--size) * 0.75);

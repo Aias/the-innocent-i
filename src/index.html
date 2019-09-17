@@ -8,3 +8,13 @@ layout: site
 <p id="what" role="doc-subtitle">
 	Web Maker
 </p>
+
+<ul>
+	{%- for page in collections.all %}
+	<li>
+		<a href="{{ page.url }}">
+			{{page.data.title or page.url}}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
