@@ -1,0 +1,30 @@
+---
+layout: site
+pageStyle: playground
+---
+
+<div class="grid-face grid-face--xy">
+	<span>H</span>
+	<span>e</span>
+	<span>l</span>
+	<span>l</span>
+	<span>o</span>
+</div>
+<div data-offset="[5, 5]" class="grid-face grid-face--yz">
+	<span>W</span>
+	<span>o</span>
+	<span>r</span>
+	<span>l</span>
+	<span>d</span>
+</div>
+<div class="grid-face grid-face--xz">
+	<span>!</span>
+	<span>!</span>
+	<span>!</span>
+</div>
+
+<script>
+	document.querySelectorAll('.grid-face').forEach(function(el) {
+		console.log(el);
+	});
+</script>

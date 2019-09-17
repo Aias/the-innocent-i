@@ -1,0 +1,68 @@
+html {
+	background-color: #fcfcfc;
+	font-size: 32px;
+}
+
+body {
+	margin: 0;
+	height: 500px;
+	position: relative;
+	background-color: #ddd;
+	overflow: hidden;
+}
+
+div {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.grid-face {
+	background-size: 1rem 1rem;
+	background-image: linear-gradient(
+			to right,
+			var(--layer-grid) 1px,
+			transparent 1px
+		),
+		linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
+	--plane-angle-x: 30deg;
+	--plane-angle-z: -60deg;
+	transform-origin: 0 0;
+	display: flex;
+}
+
+.grid-face > span {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-color: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	font-family: var(--font-stack-mono);
+	line-height: 1;
+	font-size: 0.75rem;
+	text-align: center;
+	padding-top: 0.15em;
+}
+
+.grid-face--xy {
+	--layer-grid: rgba(255, 0, 0, 0.5);
+	transform: skew(30deg) rotate(30deg) scaleX(0.8660254);
+	height: calc(100% / 0.8660254);
+	/* display: none; */
+}
+.grid-face--yz {
+	--layer-grid: rgba(0, 0, 0, 0.25);
+	transform: skew(-30deg) rotate(-30deg) scaleX(0.8660254);
+	height: calc(100% / 0.8660254);
+	padding: 5rem 0 0 5rem;
+	/* display: none; */
+}
+.grid-face--xz {
+	--layer-grid: rgba(0, 0, 255, 0.5);
+	transform: scale(0.8660254) skew(30deg) rotate(-60deg);
+	padding-top: 10rem;
+	display: none;
+}

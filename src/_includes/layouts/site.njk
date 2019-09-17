@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="gridded">
+<html lang="en">
 
 	<head>
 		<meta charset="utf-8" />
@@ -21,6 +21,13 @@
 		<meta name="keywords" content="{{ renderData.keywords or keywords or metadata.keywords }}" />
 		<!-- Layout / function -->
 		<link rel="stylesheet" type="text/css" href="/site.css" />
+		{% if pageStyle %}
+		<style type="text/css">
+		{% set css %}
+		{% include 'styles/pages/playground.css' %}
+		{% endset %}{{ css | cssmin | safe }}
+		</style>
+		{% endif %}
 	</head>
 
 	<body>
