@@ -7,12 +7,12 @@ body {
 	margin: 0;
 	display: grid;
 	grid-template-columns:
-		[gutter-left-start header-start] 5rem [gutter-left-end main-start] repeat(
+		[gutter-left-start header-start] 6rem [gutter-left-end main-start] repeat(
 			auto-fit,
 			2rem
 		)
-		[main-end gutter-right-start] 4rem [gutter-right-end header-end];
-	grid-template-rows: [header-start main-start] 4rem [header-end] auto [main-end];
+		[main-end gutter-right-start] 6rem [gutter-right-end header-end];
+	grid-template-rows: [header-start main-start] 6rem [header-end] auto [main-end];
 	min-height: 100vh;
 	font-size: 1rem;
 	line-height: 2;
@@ -35,7 +35,7 @@ Set all block level elements to fit into the grid.
 Display: table; allows elements to take only the horizontal space they need, but still break to a new line before and after.
 Ideally, there would be some way to force the width to only a certain rem multiple, but if there is, I'm not aware of it yet.
 */
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -61,16 +61,7 @@ blockquote {
 ol,
 ul {
 	padding-left: 3.5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	letter-spacing: 2px;
-}
+} */
 
 h1 {
 	margin-top: 0;
@@ -80,6 +71,7 @@ h1 {
 	font-size: 2rem;
 	line-height: 3rem;
 	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 p {
@@ -90,12 +82,9 @@ p {
 
 blockquote {
 	margin: 0;
+	padding-left: 1rem;
 	border-left: 1rem solid var(--darker-1);
 	font-style: italic;
-}
-
-blockquote > * {
-	position: initial;
 }
 
 code,

@@ -5,9 +5,9 @@
 		'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond',
 		'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook',
 		'Century Schoolbook L', Georgia, serif;
-	--font-stack-sans: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
-		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-		sans-serif;
+	--font-stack-sans: Montserrat, Roboto, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
 	--font-stack-mono: Consolas, 'Andale Mono WT', 'Andale Mono',
 		'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
 		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
