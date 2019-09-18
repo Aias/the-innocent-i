@@ -25,7 +25,7 @@ Of restless nights in one-night cheap hotels
 And sawdust restaurants with oyster-shells:
 Streets that follow like a tedious argument
 Of insidious intent
-To lead you to an overwhelming question ...
+To lead you to an overwhelming question...
 Oh, do not ask, “What is it?”
 Let us go and make our visit.
 
@@ -75,7 +75,9 @@ Have known the evenings, mornings, afternoons,
 I have measured out my life with coffee spoons;
 I know the voices dying with a dying fall
 Beneath the music from a farther room.
-               So how should I presume?
+```
+So how should I presume?
+```
 
 And I have known the eyes already, known them all—
 The eyes that fix you in a formulated phrase,
@@ -83,7 +85,9 @@ And when I am formulated, sprawling on a pin,
 When I am pinned and wriggling on the wall,
 Then how should I begin
 To spit out all the butt-ends of my days and ways?
-               And how should I presume?
+```
+And how should I presume?
+```
 
 And I have known the arms already, known them all—
 Arms that are braceleted and white and bare
@@ -92,20 +96,20 @@ Is it perfume from a dress
 That makes me so digress?
 Arms that lie along a table, or wrap about a shawl.
 ```
-  And should I then presume?
-  And how should I begin?
+And should I then presume?
+And how should I begin?
 ```
 
 Shall I say, I have gone at dusk through narrow streets
 And watched the smoke that rises from the pipes
-Of lonely men in shirt-sleeves, leaning out of windows? ...
+Of lonely men in shirt-sleeves, leaning out of windows?...
 
 I should have been a pair of ragged claws
 Scuttling across the floors of silent seas.
 
 And the afternoon, the evening, sleeps so peacefully!
 Smoothed by long fingers,
-Asleep ... tired ... or it malingers,
+Asleep...tired...or it malingers,
 Stretched on the floor, here beside you and me.
 Should I, after tea and cakes and ices,
 Have the strength to force the moment to its crisis?
@@ -126,8 +130,10 @@ To roll it towards some overwhelming question,
 To say: “I am Lazarus, come from the dead,
 Come back to tell you all, I shall tell you all”—
 If one, settling a pillow by her head
-               Should say: “That is not what I meant at all;
-               That is not it, at all.”
+```
+Should say: “That is not what I meant at all;
+That is not it, at all.”
+```
 
 And would it have been worth it, after all,
 Would it have been worth while,
@@ -139,8 +145,10 @@ But as if a magic lantern threw the nerves in patterns on a screen:
 Would it have been worth while
 If one, settling a pillow or throwing off a shawl,
 And turning toward the window, should say:
-               “That is not it at all,
-               That is not what I meant, at all.”
+```
+“That is not it at all,
+That is not what I meant, at all.”
+```
 
 No! I am not Prince Hamlet, nor was meant to be;
 Am an attendant lord, one that will do
@@ -152,7 +160,7 @@ Full of high sentence, but a bit obtuse;
 At times, indeed, almost ridiculous—
 Almost, at times, the Fool.
 
-I grow old ... I grow old ...
+I grow old...I grow old...
 I shall wear the bottoms of my trousers rolled.
 
 Shall I part my hair behind?   Do I dare to eat a peach?

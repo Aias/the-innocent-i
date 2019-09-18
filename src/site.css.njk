@@ -6,5 +6,11 @@ eleventyExcludeFromCollections: true
 {% include 'styles/vars.css' %}
 {% include 'styles/reset.css' %}
 {% include 'styles/base.css' %}
+{# Components
+TODO: Glob these automatically, as outlined here:
+https://www.11ty.io/docs/quicktips/concatenate/
+#}
+{% include 'styles/components/header.css' %}
+{# End components #}
 {% include 'styles/helpers.css' %}
 {% endset %}{{ css | cssmin | safe }}

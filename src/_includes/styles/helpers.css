@@ -1,8 +1,19 @@
+.grid-heavy {
+	--layer-grid: #0a0a0a;
+}
+.border-light {
+	--border: var(--layer-grid);
+}
+
 .boxed {
 	/* Using a border for all sides adds to the height, which disrupts a strict vertical rhythm. */
 	border-left: 1px solid var(--border);
 	border-right: 1px solid var(--border);
-	box-shadow: 0 1px 0 var(--border) inset, 0 -1px 0 var(--border) inset;
+	box-shadow: 0 1px 0 var(--border), 0 -1px 0 var(--border);
+}
+
+.ungridded {
+	background-color: var(--layer-bg);
 }
 
 .gridded {
