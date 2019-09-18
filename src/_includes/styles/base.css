@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	display: grid;
 	grid-template-columns:
-		[gutter-left-start header-start] 6rem [gutter-left-end main-start] repeat(
+		[gutter-left-start header-start] 5rem [gutter-left-end main-start] repeat(
 			auto-fit,
 			2rem
 		)
@@ -47,14 +47,15 @@ ul,
 pre,
 address,
 blockquote {
+	--offset: 1rem;
 	display: table;
 	background-color: var(--layer-bg);
 	border-left: 1px solid var(--layer-grid);
 	border-right: 1px solid var(--layer-grid);
 	box-shadow: 0 1px 0 var(--layer-grid), 0 -1px 0 var(--layer-grid);
-	padding: 0 1rem;
+	padding: 0 var(--offset);
 	position: relative;
-	left: -2rem;
+	left: calc(-1 * var(--offset));
 }
 
 ol,
