@@ -89,7 +89,7 @@ p {
 
 blockquote {
 	margin: 0;
-	border-left: 1rem solid rgba(0, 0, 0, 0.05);
+	border-left: 1rem solid var(--darker-1);
 	font-style: italic;
 }
 
@@ -105,11 +105,17 @@ pre {
 
 pre {
 	padding: 0.5rem 2rem;
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--darker-1);
 }
 
 a {
 	line-height: 1; /* Fixes bug where anchor tags add tiny bits of vertical space to their container. */
+	color: var(--theme-6);
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: var(--theme-9);
 }
 
 .heading-link {

@@ -13,7 +13,20 @@
 		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
 		'Courier New', Courier, monospace;
 
+	--theme-10: #111111;
+	--theme-9: #2d2332;
+	--theme-8: #2d2332;
+	--theme-7: #393858;
+	--theme-6: #393858;
+	--theme-5: #393858;
+	--theme-4: #4b5379;
+	--theme-3: #4b5379;
+	--theme-2: #4b5379;
+	--theme-1: #dddddd;
+
 	--layer-bg: #efefef;
 	--layer-grid: #fcfcfc;
 	--border: hsla(0, 0%, 0%, 0.85);
+
+	--darker-1: rgba(0, 0, 0, 0.05);
 }

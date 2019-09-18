@@ -1,11 +1,17 @@
+header {
+	pointer-events: none;
+}
+
 nav {
+	display: inline-block;
 	line-height: 0;
+	pointer-events: auto;
 }
 
 nav > a {
 	display: inline-block;
 	width: 4rem;
 	height: 4rem;
-	background: rgba(0, 0, 0, 0.9);
+	background: currentColor;
 	border: 1rem solid var(--layer-bg);
 }

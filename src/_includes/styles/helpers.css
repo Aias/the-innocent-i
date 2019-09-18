@@ -1,5 +1,5 @@
 .grid-heavy {
-	--layer-grid: #0a0a0a;
+	--layer-grid: var(--theme-9);
 }
 .border-light {
 	--border: var(--layer-grid);

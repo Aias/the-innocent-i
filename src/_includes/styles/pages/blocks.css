@@ -81,16 +81,16 @@
 
 .grid-face--xy {
 	transform: scaleY(0.8660254) skewY(30deg) scaleY(calc(1 / 0.8660254));
-	--grid-face-bg: #393858;
+	--grid-face-bg: var(--theme-7);
 }
 .grid-face--yz {
 	transform: scaleY(0.8660254) skewY(-30deg) scaleY(calc(1 / 0.8660254));
-	--grid-face-bg: #2d2332;
+	--grid-face-bg: var(--theme-9);
 }
 .grid-face--xz {
 	transform: scaleY(0.8660254) rotate(30deg) skew(-30deg)
 		scaleX(calc(1 / 0.8660254));
-	--grid-face-bg: #4b5379;
+	--grid-face-bg: var(--theme-4);
 }
 
 .debug .grid-face--xy {
