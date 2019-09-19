@@ -1,17 +1,13 @@
-header {
-	pointer-events: none;
+header h1 {
+	margin: 0;
 }
 
-nav {
-	display: inline-block;
-	line-height: 0;
-	pointer-events: auto;
+header ul {
+	list-style-type: none;
+	padding: 0;
 }
 
-nav > a {
-	display: inline-block;
-	width: 4rem;
-	height: 4rem;
-	background: currentColor;
-	border: 1rem solid var(--layer-bg);
+header a {
+	text-decoration: none;
+	font-weight: var(--font-weight-bolder);
 }
