@@ -40,7 +40,6 @@
 	--y-line: linear-gradient(to right, var(--layer-grid) 1px, transparent 1px);
 	--xy-line: var(--x-line), var(--y-line);
 
-	--body-margin: 4rem;
 	--gutter-width: 12rem;
 	--content-width: 45rem;
 	--aside-width: 20rem;

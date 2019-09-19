@@ -15,7 +15,7 @@ body {
 		)
 		[main-end header-end];
 	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
-	grid-row-gap: 4rem;
+	grid-row-gap: 2rem;
 	min-height: 100vh;
 	font-size: calc(4rem / 3);
 	line-height: 2rem;
@@ -50,17 +50,23 @@ main {
 h1 {
 	margin-top: 0;
 	margin-bottom: 2rem;
-	font-size: calc(8rem / 3);
-	line-height: 3rem;
+	font-size: 3rem;
+	line-height: 4rem;
 	letter-spacing: 1px;
 	font-weight: var(--font-weight-normal);
 }
 
 h2 {
-	font-size: var(--base-font-size);
+	font-size: calc(7rem / 4);
 	line-height: 3rem;
 	margin-bottom: 2rem;
-	text-transform: lowercase;
+	font-weight: var(--font-weight-normal);
+}
+
+h3 {
+	font-size: var(--base-font-size);
+	line-height: 2rem;
+	margin-bottom: 1rem;
 	font-weight: var(--font-weight-bolder);
 }
 
@@ -91,6 +97,7 @@ pre {
 
 ul,
 ol {
+	margin: 1rem 0;
 	line-height: 3rem;
 }
 
