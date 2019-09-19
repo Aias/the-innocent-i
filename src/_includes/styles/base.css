@@ -19,6 +19,19 @@ body {
 	font-family: var(--font-stack-sans);
 }
 
+body:after {
+	content: '';
+	position: fixed;
+	background-color: var(--theme-9);
+	opacity: 0.6;
+	top: -30rem;
+	bottom: -50rem;
+	left: calc(100% - 6rem);
+	right: -20rem;
+	border-radius: 200%;
+	transform: rotate(1deg);
+}
+
 header {
 	grid-area: header;
 	padding: 1rem;
@@ -29,39 +42,6 @@ main {
 	grid-area: main;
 	padding-top: 1rem;
 }
-
-/*
-Set all block level elements to fit into the grid.
-Display: table; allows elements to take only the horizontal space they need, but still break to a new line before and after.
-Ideally, there would be some way to force the width to only a certain rem multiple, but if there is, I'm not aware of it yet.
-*/
-/* p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-address,
-blockquote {
-	--offset: 1rem;
-	display: table;
-	background-color: var(--layer-bg);
-	border-left: 1px solid var(--layer-grid);
-	border-right: 1px solid var(--layer-grid);
-	box-shadow: 0 1px 0 var(--layer-grid), 0 -1px 0 var(--layer-grid);
-	padding: 0 var(--offset);
-	position: relative;
-	left: calc(-1 * var(--offset));
-}
-
-ol,
-ul {
-	padding-left: 3.5rem;
-} */
 
 h1 {
 	margin-top: 0;

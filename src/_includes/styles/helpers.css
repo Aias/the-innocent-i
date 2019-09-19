@@ -18,12 +18,7 @@
 
 .gridded {
 	background-size: 1rem 1rem;
-	background-image: linear-gradient(
-			to right,
-			var(--layer-grid) 1px,
-			transparent 1px
-		),
-		linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
+	background-image: var(--xy-line);
 	/* The following statement helps put text directly on the baseline. */
 	/* background-position-y: 0.5rem; */
 }

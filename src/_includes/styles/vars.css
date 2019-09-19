@@ -29,4 +29,14 @@
 	--border: hsla(0, 0%, 0%, 0.85);
 
 	--darker-1: rgba(0, 0, 0, 0.05);
+
+	--x-line: linear-gradient(
+		to bottom,
+		var(--layer-grid) 1px,
+		transparent 1px
+	);
+
+	--y-line: linear-gradient(to right, var(--layer-grid) 1px, transparent 1px);
+
+	--xy-line: var(--x-line), var(--y-line);
 }

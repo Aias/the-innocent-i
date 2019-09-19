@@ -1,12 +1,49 @@
 .iso-container {
 	--size: 2rem;
+	--cos30: 0.8660254;
 
-	height: calc(6 * var(--size));
+	height: calc(
+		6 * var(--size) + 0.5px
+	); /* Extra half pixel cuts off last horizontal line and creates a nice flow back into the regular grid. */
 	width: calc(12 * var(--size));
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	background-color: var(--layer-bg);
+	transform-origin: 0 0;
+}
+
+.iso-container {
+	background-size: 1rem 1rem;
+	background-image: var(--y-line);
+}
+
+.iso-container:before {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	right: -100%;
+	bottom: -100%;
+	background-size: 1rem 1rem;
+	background-image: var(--x-line);
+	transform-origin: inherit;
+	transform: scaleY(var(--cos30)) rotate(-30deg) translateX(-50%);
+}
+
+.iso-container:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	right: -100%;
+	bottom: -100%;
+	background-size: 1rem 1rem;
+	background-image: var(--x-line);
+	transform-origin: inherit;
+	transform: scaleY(var(--cos30)) rotate(30deg) translateY(-50%);
 }
 
 @media (max-width: 500px) {
@@ -19,20 +56,28 @@
 	opacity: 0;
 }
 
-.grid-face--lined {
-	width: 1000vw;
-	height: 1000vh;
-	min-height: 500%;
-	top: -100rem !important;
-	left: -100rem !important;
-	transform: translate(-100vw, -100vh);
-	background-size: 1rem 1rem;
-	background-image: linear-gradient(
-			to right,
-			var(--layer-grid) 1px,
-			transparent 1px
-		),
-		linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
+.grid-face {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform-origin: 0 0;
+	pointer-events: none;
+	z-index: 2;
+}
+.grid-face--xy {
+	transform: scaleY(var(--cos30)) skewY(30deg) scaleY(calc(1 / var(--cos30)));
+	--grid-face-bg: var(--theme-7);
+}
+.grid-face--yz {
+	transform: scaleY(var(--cos30)) skewY(-30deg) scaleY(calc(1 / var(--cos30)));
+	--grid-face-bg: var(--theme-9);
+}
+.grid-face--xz {
+	transform: scaleY(var(--cos30)) rotate(30deg) skew(-30deg)
+		scaleX(calc(1 / var(--cos30)));
+	--grid-face-bg: var(--theme-4);
 }
 
 .debug .grid-face--lined {
@@ -43,14 +88,14 @@
 	left: 0;
 }
 
-.grid-face {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	transform-origin: 0 0;
-	pointer-events: none;
+.debug .grid-face--xy {
+	--layer-grid: rgba(255, 0, 0, 0.5);
+}
+.debug .grid-face--yz {
+	--layer-grid: rgba(0, 0, 0, 0.25);
+}
+.debug .grid-face--xz {
+	--layer-grid: rgba(0, 0, 255, 0.5);
 }
 
 .group-offset {
@@ -64,41 +109,10 @@
 	height: var(--size);
 	background-color: var(--grid-face-bg);
 	border: 1px ridge rgba(255, 255, 255, 0.15);
-	/* box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.15); */
-	/* font-family: var(--font-stack-mono);
-	line-height: 1;
-	font-size: calc(var(--size) * 0.75);
-	text-align: center;
-	padding-top: calc(var(--size) * 0.1); 
-	color: var(--layer-bg); */
 	transition: opacity 0.2s;
 	pointer-events: auto;
 }
 
 .group-offset span:hover {
 	opacity: 0.5;
-}
-
-.grid-face--xy {
-	transform: scaleY(0.8660254) skewY(30deg) scaleY(calc(1 / 0.8660254));
-	--grid-face-bg: var(--theme-7);
-}
-.grid-face--yz {
-	transform: scaleY(0.8660254) skewY(-30deg) scaleY(calc(1 / 0.8660254));
-	--grid-face-bg: var(--theme-9);
-}
-.grid-face--xz {
-	transform: scaleY(0.8660254) rotate(30deg) skew(-30deg)
-		scaleX(calc(1 / 0.8660254));
-	--grid-face-bg: var(--theme-4);
-}
-
-.debug .grid-face--xy {
-	--layer-grid: rgba(255, 0, 0, 0.5);
-}
-.debug .grid-face--yz {
-	--layer-grid: rgba(0, 0, 0, 0.25);
-}
-.debug .grid-face--xz {
-	--layer-grid: rgba(0, 0, 255, 0.5);
 }
