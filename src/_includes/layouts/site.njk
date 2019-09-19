@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="gridded">
+<html lang="en">
 
 	<head>
 		<meta charset="utf-8" />
@@ -20,7 +20,7 @@
 		<meta property="og:type" content="website" />
 		<meta name="keywords" content="{{ renderData.keywords or keywords or metadata.keywords }}" />
 		<!-- Layout / function -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/site.css" />
 		{% if pageStyle %}
 		<style type="text/css">
@@ -30,17 +30,14 @@
 		</style>
 		{% endif %}
 	</head>
-
-	<header>
-		<nav>
-			<a href="/" title="Main"></a>
-		</nav>
-	</header>
-
-	<body>
+	<body class="gridded">
+		{% include 'components/header.html' %}
 		<main>
 			{{ content | safe }}
 		</main>
+		<div class="splash" role="presentation">
+			{% include 'components/splash.svg' %}
+		</div>
 	</body>
 
 </html>

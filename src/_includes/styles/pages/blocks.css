@@ -68,16 +68,16 @@
 }
 .grid-face--xy {
 	transform: scaleY(var(--cos30)) skewY(30deg) scaleY(calc(1 / var(--cos30)));
-	--grid-face-bg: var(--theme-7);
+	--grid-face-bg: var(--gray-2);
 }
 .grid-face--yz {
 	transform: scaleY(var(--cos30)) skewY(-30deg) scaleY(calc(1 / var(--cos30)));
-	--grid-face-bg: var(--theme-9);
+	--grid-face-bg: var(--gray-3);
 }
 .grid-face--xz {
 	transform: scaleY(var(--cos30)) rotate(30deg) skew(-30deg)
 		scaleX(calc(1 / var(--cos30)));
-	--grid-face-bg: var(--theme-4);
+	--grid-face-bg: var(--gray-1);
 }
 
 .debug .grid-face--lined {

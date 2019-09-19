@@ -1,63 +1,73 @@
 html {
-	font-size: 100%;
+	font-size: 75%;
 	background-color: var(--layer-bg);
 }
 
 body {
 	margin: 0;
+	padding: 4rem;
+	position: relative;
 	display: grid;
 	grid-template-columns:
-		[gutter-left-start header-start] 6rem [gutter-left-end main-start] repeat(
+		[gutter-left-start] 8rem [gutter-left-end header-start main-start] repeat(
 			auto-fit,
 			2rem
 		)
-		[main-end gutter-right-start] 6rem [gutter-right-end header-end];
-	grid-template-rows: [header-start main-start] 6rem [header-end] auto [main-end];
+		[main-end header-end];
+	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
+	grid-row-gap: 4rem;
 	min-height: 100vh;
-	font-size: 1rem;
-	line-height: 2;
+	font-size: calc(4rem / 3);
+	line-height: 2rem;
 	font-family: var(--font-stack-sans);
-}
-
-body:after {
-	content: '';
-	position: fixed;
-	background-color: var(--theme-9);
-	opacity: 0.6;
-	top: -30rem;
-	bottom: -50rem;
-	left: calc(100% - 6rem);
-	right: -20rem;
-	border-radius: 200%;
-	transform: rotate(1deg);
+	font-weight: var(--font-weight-normal);
 }
 
 header {
 	grid-area: header;
-	padding: 1rem;
 	z-index: 10;
 }
 
 main {
 	grid-area: main;
-	padding-top: 1rem;
+	max-width: var(--content-width);
+}
+
+.splash {
+	position: absolute;
+	top: -2rem;
+	right: 0;
+	bottom: 0;
+	left: var(--total-width);
+	overflow: hidden;
+}
+
+.splash > svg {
+	width: 100%;
+	height: calc(100% + 4rem);
 }
 
 h1 {
 	margin-top: 0;
-	margin-bottom: 1rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	font-size: 2rem;
+	margin-bottom: 2rem;
+	font-size: calc(8rem / 3);
 	line-height: 3rem;
-	font-weight: 300;
 	letter-spacing: 1px;
+	font-weight: var(--font-weight-normal);
+}
+
+h2 {
+	font-size: var(--base-font-size);
+	line-height: 3rem;
+	margin-bottom: 2rem;
+	text-transform: lowercase;
+	font-weight: var(--font-weight-bolder);
 }
 
 p {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	font-size: 1rem;
+	font-size: var(--base-font-size);
 }
 
 blockquote {
@@ -70,7 +80,8 @@ blockquote {
 code,
 pre {
 	font-family: var(--font-stack-mono);
-	line-height: 2;
+	line-height: 2rem;
+	margin: 1rem 0;
 }
 
 pre {
@@ -78,14 +89,33 @@ pre {
 	background-color: var(--darker-1);
 }
 
+ul,
+ol {
+	line-height: 3rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child,
+ul:first-child,
+ol:first-child,
+blockquote:first-child,
+pre:first-child {
+	margin-top: 0;
+}
+
 a {
 	line-height: 1; /* Fixes bug where anchor tags add tiny bits of vertical space to their container. */
-	color: var(--theme-6);
+	color: var(--theme-2);
 	transition: color 0.2s;
 }
 
 a:hover {
-	color: var(--theme-9);
+	color: var(--theme-1);
 }
 
 .heading-link {

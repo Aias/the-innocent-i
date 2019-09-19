@@ -13,19 +13,21 @@
 		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
 		'Courier New', Courier, monospace;
 
-	--theme-10: #111111;
-	--theme-9: #2d2332;
-	--theme-8: #2d2332;
-	--theme-7: #393858;
-	--theme-6: #393858;
-	--theme-5: #393858;
-	--theme-4: #4b5379;
-	--theme-3: #4b5379;
-	--theme-2: #4b5379;
-	--theme-1: #dddddd;
+	--base-font-size: calc(4rem / 3);
+	--font-weight-normal: 300;
+	--font-weight-bolder: 500;
 
-	--layer-bg: #efefef;
-	--layer-grid: #fcfcfc;
+	--theme-2: #ad4111;
+	--theme-1: #d07939;
+
+	--gray-1: #bebebe;
+	--gray-2: #606060;
+	--gray-3: #1d1d1d;
+
+	--clr-text: rgba(0, 0, 0, 0.9);
+
+	--layer-bg: #edeceb;
+	--layer-grid: rgba(255, 255, 255, 0.3);
 	--border: hsla(0, 0%, 0%, 0.85);
 
 	--darker-1: rgba(0, 0, 0, 0.05);
@@ -35,8 +37,22 @@
 		var(--layer-grid) 1px,
 		transparent 1px
 	);
-
 	--y-line: linear-gradient(to right, var(--layer-grid) 1px, transparent 1px);
-
 	--xy-line: var(--x-line), var(--y-line);
+
+	--body-margin: 4rem;
+	--gutter-width: 12rem;
+	--content-width: 45rem;
+	--aside-width: 20rem;
+	--space-width: 25rem;
+	--total-width: calc(
+		var(--gutter-width) + var(--content-width) + var(--aside-width) +
+			var(--space-width)
+	);
+}
+
+@media (max-width: 1440px) {
+	:root {
+		--aside-width: 0rem;
+	}
 }

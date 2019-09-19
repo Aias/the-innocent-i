@@ -1,11 +1,11 @@
 {
-	"title": "Nick Trombley",
+	"title": "nick trombley . design",
 	"url": "https://nicktrombley.design/",
-	"description": "A website for a web designer.",
+	"description": "images and words",
 	"keywords": "design, development, ux, making",
 	"feed": {
-		"title": "Nick Trombley's Blog",
-		"subtitle": "Long and short words.",
+		"title": "nicktrombley.design/feed",
+		"subtitle": "images and words",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
 		"url": "https://nicktrombley.design/feed/feed.xml",
@@ -15,5 +15,5 @@
 		"name": "Nick Trombley",
 		"email": "trombley.nick@gmail.com"
 	},
-	"themeColor": "#FAFAFA"
+	"themeColor": "#AD4111"
 }
