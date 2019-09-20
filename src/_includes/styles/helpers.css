@@ -9,8 +9,9 @@
 }
 
 .grid-heavy {
-	--layer-grid: #0a0a0a;
+	--layer-grid: var(--border);
 }
+
 .border-light {
 	--border: var(--layer-grid);
 }

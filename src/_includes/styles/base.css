@@ -5,7 +5,7 @@ html {
 
 body {
 	margin: 0;
-	padding: 4rem;
+	padding: var(--body-padding);
 	position: relative;
 	display: grid;
 	grid-template-columns:
@@ -55,7 +55,8 @@ main {
 
 @media (max-width: 600px) {
 	body {
-		padding: 2rem 2rem 6rem 2rem;
+		--body-padding: 2rem;
+		margin-bottom: 4rem;
 	}
 
 	.splash {

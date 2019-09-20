@@ -17,20 +17,21 @@
 	--font-weight-normal: 300;
 	--font-weight-bolder: 500;
 
-	--theme-2: #ad4111;
 	--theme-1: #d07939;
+	--theme-2: #ad4111;
+	--theme-3: #4b1801;
 
 	--gray-1: #bebebe;
 	--gray-2: #606060;
 	--gray-3: #1d1d1d;
 
+	--darker-1: rgba(0, 0, 0, 0.05);
+
 	--clr-text: rgba(0, 0, 0, 0.9);
 
 	--layer-bg: #edeceb;
 	--layer-grid: rgba(255, 255, 255, 0.3);
-	--border: hsla(0, 0%, 0%, 0.85);
-
-	--darker-1: rgba(0, 0, 0, 0.05);
+	--border: var(--clr-text);
 
 	--x-line: linear-gradient(
 		to bottom,
@@ -40,6 +41,7 @@
 	--y-line: linear-gradient(to right, var(--layer-grid) 1px, transparent 1px);
 	--xy-line: var(--x-line), var(--y-line);
 
+	--body-padding: 4rem;
 	--gutter-width: 12rem;
 	--content-width: 45rem;
 	--aside-width: 20rem;
@@ -48,10 +50,4 @@
 		var(--gutter-width) + var(--content-width) + var(--aside-width) +
 			var(--space-width)
 	);
-}
-
-@media (max-width: 1440px) {
-	:root {
-		--aside-width: 0rem;
-	}
 }
