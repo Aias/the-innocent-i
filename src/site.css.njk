@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
 TODO: Glob these automatically, as outlined here:
 https://www.11ty.io/docs/quicktips/concatenate/
 #}
-{% include 'styles/components/header.css' %}
+{% include 'components/header/header.css' %}
 {# End components #}
 {% include 'styles/helpers.css' %}
 {% endset %}{{ css | cssmin | safe }}

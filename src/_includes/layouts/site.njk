@@ -25,13 +25,13 @@
 		{% if pageStyle %}
 		<style type="text/css">
 		{% set css %}
-		{% include 'styles/pages/' + pageStyle + '.css' %}
+		{% include 'pages/' + pageStyle + '/' + pageStyle + '.css' %}
 		{% endset %}{{ css | cssmin | safe }}
 		</style>
 		{% endif %}
 	</head>
 	<body class="gridded">
-		{% include 'components/header.html' %}
+		{% include 'components/header/header.html' %}
 		<main>
 			{{ content | safe }}
 		</main>

@@ -52,8 +52,8 @@ h1 {
 	margin-bottom: 2rem;
 	font-size: 3rem;
 	line-height: 4rem;
-	letter-spacing: 1px;
 	font-weight: var(--font-weight-normal);
+	letter-spacing: 1px;
 }
 
 h2 {
@@ -61,6 +61,7 @@ h2 {
 	line-height: 3rem;
 	margin-bottom: 2rem;
 	font-weight: var(--font-weight-normal);
+	letter-spacing: 2px;
 }
 
 h3 {

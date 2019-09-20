@@ -1,5 +1,13 @@
-header h1 {
+.site-title {
 	margin: 0;
+}
+
+.site-title > a {
+	all: inherit;
+}
+
+.site-title > a:hover {
+	cursor: pointer;
 }
 
 header ul {

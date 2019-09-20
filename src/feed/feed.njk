@@ -14,16 +14,16 @@ eleventyExcludeFromCollections: true
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
-	{%- for post in collections.fragments %}
-	{% set absolutePostUrl %}
-	{{ post.url | url | absoluteUrl(metadata.url) }}
+	{%- for fragment in collections.fragments %}
+	{% set absoluteFragmentUrl %}
+	{{ fragment.url | url | absoluteUrl(metadata.url) }}
 	{% endset %}
 	<entry>
-		<title>{{ post.data.title }}</title>
-		<link href="{{ absolutePostUrl }}" />
-		<updated>{{ post.date | rssDate }}</updated>
-		<id>{{ absolutePostUrl }}</id>
-		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
+		<title>{{ fragment.data.title }}</title>
+		<link href="{{ absoluteFragmentUrl }}" />
+		<updated>{{ fragment.date | rssDate }}</updated>
+		<id>{{ absoluteFragmentUrl }}</id>
+		<content type="html">{{ fragment.templateContent | htmlToAbsoluteUrls(absoluteFragmentUrl) | safe }}</content>
 	</entry>
 	{%- endfor %}
 </feed>
