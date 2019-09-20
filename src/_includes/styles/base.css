@@ -85,7 +85,8 @@ h1 {
 h2 {
 	font-size: calc(7rem / 4);
 	line-height: 3rem;
-	margin-bottom: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 	font-weight: var(--font-weight-normal);
 	letter-spacing: 2px;
 }
@@ -93,6 +94,7 @@ h2 {
 h3 {
 	font-size: var(--base-font-size);
 	line-height: 2rem;
+	margin-top: 3rem;
 	margin-bottom: 1rem;
 	font-weight: var(--font-weight-bolder);
 }
@@ -108,6 +110,12 @@ blockquote {
 	border-left: 1rem solid var(--layer-bg);
 	font-size: calc(7rem / 6);
 	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+	display: block;
+	text-align: right;
 }
 
 code,
@@ -153,12 +161,5 @@ a:hover {
 }
 
 .heading-link {
-	text-decoration: none;
-	font-size: 0.85em;
-	margin-left: 0.25em;
-	opacity: 0.5;
-	transition: opacity 0.2s;
-}
-.heading-link:hover {
-	opacity: 1;
+	display: none;
 }

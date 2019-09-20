@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
 	let anchorOpts = {
 		permalink: true,
 		permalinkClass: 'heading-link',
-		permalinkSymbol: '⚓',
+		permalinkSymbol: '#',
 		permalinkSpace: false
 		// permalinkBefore: false
 	};

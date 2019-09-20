@@ -2,5 +2,8 @@
 layout: site
 ---
 <article>
+	<h2>
+		{{ title or 'untitled' }}
+	</h2>
 	{{ content | safe }}
 </article>

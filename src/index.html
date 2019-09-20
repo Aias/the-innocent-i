@@ -1,5 +1,6 @@
 ---
 layout: site
+eleventyExcludeFromCollections: true
 ---
 
 <h2>every thing</h2>
@@ -8,7 +9,7 @@ layout: site
 	{%- for page in collections.all %}
 	<li>
 		<a href="{{ page.url }}">
-			{{page.data.title or page.url}}
+			{{page.data.title or page.fileSlug}}
 		</a>
 	</li>
 	{% endfor %}
