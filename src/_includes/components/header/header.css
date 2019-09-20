@@ -10,6 +10,10 @@
 	cursor: pointer;
 }
 
+.site-title span {
+	white-space: nowrap;
+}
+
 header ul {
 	list-style-type: none;
 	padding: 0;

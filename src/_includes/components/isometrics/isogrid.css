@@ -6,7 +6,6 @@
 		6 * var(--size) + 0.5px
 	); /* Extra half pixel cuts off last horizontal line and creates a nice flow back into the regular grid. */
 	width: calc(12 * var(--size));
-	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	background-color: var(--layer-bg);
@@ -46,7 +45,7 @@
 	transform: scaleY(var(--cos30)) rotate(30deg) translateY(-50%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.iso-container {
 		--size: 1rem;
 	}
@@ -103,7 +102,7 @@
 	position: absolute;
 }
 
-.group-offset span {
+.iso-cell {
 	display: inline-block;
 	width: var(--size);
 	height: var(--size);
@@ -113,6 +112,6 @@
 	pointer-events: auto;
 }
 
-.group-offset span:hover {
+.iso-cell:hover {
 	opacity: 0.5;
 }

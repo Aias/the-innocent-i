@@ -1,15 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 720 1080">
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	preserveAspectRatio="none"
+	viewBox="0 0 720 1080"
+>
 	<defs>
-	  <filter id="a" width="575.701" height="1377" x="268.799" y="-148.5" filterUnits="userSpaceOnUse">
-		<feOffset dx="-24"/>
-		<feGaussianBlur result="b" stdDeviation="49.5"/>
-		<feFlood flood-opacity=".11"/>
-		<feComposite in2="b" operator="in"/>
-		<feComposite in="SourceGraphic"/>
-	  </filter>
+		<filter
+			id="a"
+			width="575.701"
+			height="1377"
+			x="268.799"
+			y="-148.5"
+			filterUnits="userSpaceOnUse"
+		>
+			<feOffset dx="-24" />
+			<feGaussianBlur result="b" stdDeviation="49.5" />
+			<feFlood flood-opacity=".11" />
+			<feComposite in2="b" operator="in" />
+			<feComposite in="SourceGraphic" />
+		</filter>
 	</defs>
-	<path class="theme-2" fill="#ad4111" stroke="rgba(0,0,0,0.9)" stroke-linecap="round" stroke-width="2" d="M0 1080L141.745 0H720v1080z"/>
+	<path class="theme-2" d="M0 1080L141.745 0H720v1080z" />
 	<g filter="url(#a)">
-	  <path class="theme-1" fill="#d07939" d="M542.729 1080C502.767 864.506 461.92 525.655 441.3 0H720v1080z"/>
+		<path
+			class="theme-1"
+			d="M542.729 1080C502.767 864.506 461.92 525.655 441.3 0H720v1080z"
+		/>
 	</g>
-  </svg>
+</svg>

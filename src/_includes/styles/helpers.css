@@ -1,5 +1,15 @@
+.theme-1 {
+	color: var(--theme-1);
+	fill: currentColor;
+}
+
+.theme-2 {
+	color: var(--theme-2);
+	fill: currentColor;
+}
+
 .grid-heavy {
-	--layer-grid: #0A0A0A;
+	--layer-grid: #0a0a0a;
 }
 .border-light {
 	--border: var(--layer-grid);
