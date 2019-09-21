@@ -13,7 +13,12 @@
 		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
 		'Courier New', Courier, monospace;
 
-	--base-font-size: calc(4rem / 3);
+	--font-size-base: calc(4rem / 3); /* 16px */
+	--font-size-smaller: calc(7rem / 6); /* 14px */
+	--font-size-smallest: 1rem; /* 10px */
+	--font-size-larger: calc(7rem / 4); /* 21px */
+	--font-size-largest: 3rem; /* 36px */
+
 	--font-weight-normal: 300;
 	--font-weight-bolder: 500;
 
@@ -27,11 +32,12 @@
 
 	--darker-1: rgba(0, 0, 0, 0.05);
 
-	--clr-text: rgba(0, 0, 0, 0.9);
+	--clr-text-primary: rgba(0, 0, 0, 0.9);
+	--clr-text-secondary: rgba(0, 0, 0, 0.65);
 
 	--layer-bg: #edeceb;
 	--layer-grid: rgba(255, 255, 255, 0.3);
-	--border: var(--clr-text);
+	--border: var(--clr-text-primary);
 
 	--x-line: linear-gradient(
 		to bottom,
