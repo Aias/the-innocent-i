@@ -3,19 +3,13 @@ layout: site
 eleventyExcludeFromCollections: true
 ---
 
-<h2>every thing</h2>
+<p>This website is a work in progress. Design should be done in plain sight.</p>
 
-<ul>
-	{%- for page in collections.all %}
-	<li>
-		<a href="{{ page.url }}">
-			{{page.data.title or page.fileSlug}}
-		</a>
-	</li>
-	{% endfor %}
-</ul>
+<p>See this and other projects <a href="https://github.com/Aias">here</a>.</p>
 
-<p>
+<h2>quote of the day</h2>
+
+<blockquote>
 	As the actual tools for getting words onto the page become more flexible and
 	externalized, the writer can get down almost every thought or every
 	extension of thought. That ought to be an advantage. But in fact, in all
@@ -25,4 +19,12 @@ eleventyExcludeFromCollections: true
 	meet the terrible resistance of what happened your first year at it when you
 	couldn’t write at all… when you were making attempts, pretending to form
 	letters.
-</p>
+	<cite
+		>Frank Chimero,
+		<em
+			><a href="https://frankchimero.com/blog/2019/built-in-resistance/"
+				>Built-in Resistance</a
+			></em
+		></cite
+	>
+</blockquote>

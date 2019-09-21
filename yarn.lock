@@ -2196,6 +2196,11 @@ markdown-it-anchor@^5.2.4:
   resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-5.2.4.tgz#d39306fe4c199705b4479d3036842cf34dcba24f"
   integrity sha512-n8zCGjxA3T+Mx1pG8HEgbJbkB8JFUuRkeTZQuIM8iPY6oQ8sWOPRZJDFC9a/pNg2QkHEjjGkhBEl/RSyzaDZ3A==
 
+markdown-it-attrs@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/markdown-it-attrs/-/markdown-it-attrs-3.0.1.tgz#5ce7b4405f2286190fbcf4c482aa9e3e2d55ece5"
+  integrity sha512-fcpdmxdEsctDVJEunPyrirVtU/6zcTMxPxAu4Ofz51PKAa8vRMpmGQXsmXx1HTdIdUPoDonm/RhS/+jTNywj/Q==
+
 markdown-it@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-10.0.0.tgz#abfc64f141b1722d663402044e43927f1f50a8dc"

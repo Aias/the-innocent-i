@@ -1,0 +1,17 @@
+---
+title: every thing
+layout: site
+eleventyExcludeFromCollections: true
+---
+
+<h2>{{ title }}</h2>
+
+<ul>
+	{%- for page in collections.all %}
+	<li>
+		<a href="{{ page.url }}">
+			{{page.data.title or page.fileSlug}}
+		</a>
+	</li>
+	{% endfor %}
+</ul>

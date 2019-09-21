@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
 	/* Markdown plugins */
 	let markdownIt = require('markdown-it');
 	let markdownItAnchor = require('markdown-it-anchor');
+	let markdownItAttrs = require('markdown-it-attrs');
 	let markdownOpts = {
 		html: true,
 		breaks: true,
@@ -30,7 +31,9 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.setLibrary(
 		'md',
-		markdownIt(markdownOpts).use(markdownItAnchor, anchorOpts)
+		markdownIt(markdownOpts)
+			.use(markdownItAnchor, anchorOpts)
+			.use(markdownItAttrs)
 	);
 
 	/* Static files (CSS, images, etc.) */
