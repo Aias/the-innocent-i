@@ -1,5 +1,6 @@
 .site-header {
 	display: flex;
+	margin-left: var(--gutter-gap);
 }
 
 .logo {

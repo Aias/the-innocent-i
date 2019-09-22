@@ -14,7 +14,6 @@ body {
 		[main-end header-end];
 	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
 	grid-row-gap: 4rem;
-	grid-column-gap: var(--gutter-gap);
 	min-height: 100vh;
 	font-size: var(--font-size-base);
 	line-height: 2rem;
@@ -39,6 +38,7 @@ main {
 	grid-area: main;
 	max-width: var(--content-width);
 	position: relative;
+	margin-left: var(--gutter-gap);
 	padding-left: calc(var(--gutter-gap) / 2);
 	left: calc(-1 * var(--gutter-gap) / 2);
 }
