@@ -2,9 +2,7 @@
 	--size: 2rem;
 	--cos30: 0.8660254;
 
-	height: calc(
-		6 * var(--size) + 0.5px
-	); /* Extra half pixel cuts off last horizontal line and creates a nice flow back into the regular grid. */
+	height: calc(6 * var(--size));
 	width: calc(12 * var(--size));
 	position: relative;
 	overflow: hidden;

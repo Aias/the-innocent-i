@@ -9,19 +9,25 @@ body {
 	position: relative;
 	display: grid;
 	grid-template-columns:
-		[gutter-left-start main-start header-start] 8rem [gutter-left-end] repeat(
-			auto-fit,
-			2rem
-		)
+		[gutter-left-start] var(--gutter-width)
+		[gutter-left-end header-start main-start] repeat(auto-fit, 2rem)
 		[main-end header-end];
 	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
-	grid-row-gap: 2rem;
+	grid-row-gap: 4rem;
+	grid-column-gap: var(--gutter-gap);
 	min-height: 100vh;
 	font-size: var(--font-size-base);
 	line-height: 2rem;
 	font-family: var(--font-stack-sans);
 	font-weight: var(--font-weight-normal);
 	color: var(--clr-text-primary);
+}
+
+.logo {
+	grid-column: gutter-left;
+	justify-self: end;
+	grid-row: header;
+	padding: 0.5rem 0;
 }
 
 header {
@@ -32,6 +38,20 @@ header {
 main {
 	grid-area: main;
 	max-width: var(--content-width);
+	position: relative;
+	padding-left: calc(var(--gutter-gap) / 2);
+	left: calc(-1 * var(--gutter-gap) / 2);
+}
+
+.gutter-left {
+	--gutter-total: calc(var(--gutter-width) + var(--gutter-padding));
+	width: var(--gutter-total);
+	min-width: var(--gutter-total);
+	margin-right: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
 
 .splash {
@@ -55,8 +75,11 @@ main {
 }
 
 @media (max-width: 600px) {
-	body {
+	:root {
 		--body-padding: 2rem;
+	}
+
+	body {
 		margin-bottom: 4rem;
 	}
 
@@ -176,7 +199,7 @@ pre:first-child {
 }
 
 a {
-	line-height: 1; /* Fixes bug where anchor tags add tiny bits of vertical space to their container. */
+	line-height: inherit; /* Fixes bug where anchor tags add tiny bits of vertical space to their container. */
 	color: var(--theme-2);
 	transition: color 0.2s;
 }

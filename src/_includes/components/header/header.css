@@ -1,3 +1,27 @@
+.site-header {
+	display: flex;
+}
+
+.logo {
+	width: 6rem;
+}
+
+.logo .iso-face {
+	stroke: 1px solid var(--clr-text-primary);
+}
+
+.logo .iso-face--xz {
+	fill: var(--gray-1);
+}
+
+.logo .iso-face--xy {
+	fill: var(--gray-2);
+}
+
+.logo .iso-face--yz {
+	fill: var(--gray-3);
+}
+
 .site-title {
 	margin: 0;
 }
@@ -15,8 +39,9 @@
 }
 
 header ul {
-	list-style-type: none;
 	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .nav-link {

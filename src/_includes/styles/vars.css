@@ -48,7 +48,8 @@
 	--xy-line: var(--x-line), var(--y-line);
 
 	--body-padding: 4rem;
-	--gutter-width: 12rem;
+	--gutter-width: 6rem;
+	--gutter-gap: var(--body-padding);
 	--content-width: 45rem;
 	--aside-width: 20rem;
 	--space-width: 25rem;

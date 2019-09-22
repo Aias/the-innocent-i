@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+	<g stroke-linecap="round" stroke-linejoin="bevel">
+		<path
+			class="iso-face iso-face--yz"
+			d="M7.201 50.4l21.6-10.271L7.201 28.8z"
+		/>
+		<path
+			class="iso-face iso-face--xz"
+			d="M28.801 39.692v21.711l-21.6-11zM36.001 36l-36-17.541L36.001 0l36 18.459-36 17.541zm0-28.8l-21.6 11.122 21.6 10.478 21.6-10.478L36.001 7.2z"
+		/>
+		<path
+			class="iso-face iso-face--xy"
+			d="M36.001 72l-36-18.123V18.322l36 17.677v36zm-28.8-43.201v21.6l21.6 11V39.938l-21.6-11.139z"
+		/>
+		<path
+			class="iso-face iso-face--yz"
+			d="M36 71.999v-36l36-17.677v35.985L36 71.999zm28.8-43.2L43.2 39.743v21.66l21.6-11v-21.6z"
+		/>
+		<path
+			class="iso-face iso-face--xy"
+			d="M14.401 39.692v6.94l7.2 3.768v-7.2z"
+		/>
+		<path
+			class="iso-face iso-face--xz"
+			d="M14.401 39.832l7.2-3.833 7.2 3.833-7.2 3.367z"
+		/>
+		<path
+			class="iso-face iso-face--yz"
+			d="M21.601 50.399l7.2-3.652v-7.053l-7.2 3.5z"
+		/>
+		<path
+			class="iso-face iso-face--yz"
+			d="M50.4 43.199v7.2l7.2-3.319v-7.432z"
+		/>
+		<path
+			class="iso-face iso-face--xz"
+			d="M64.8 50.399L43.2 39.82v21.558z"
+		/>
+		<path
+			class="iso-face iso-face--xy"
+			d="M64.8 28.8L43.2 39.825 64.8 50.4z"
+		/>
+		<path
+			class="iso-face iso-face--xz"
+			d="M57.6 39.82l-7.2-3.821-7.2 3.821 7.2 3.379z"
+		/>
+		<path
+			class="iso-face iso-face--xy"
+			d="M50.4 50.4v-7.2l-7.2-3.476v7.429z"
+		/>
+		<path
+			class="iso-face iso-face--yz"
+			d="M36.001 7.2v21.6l-21.6-10.515z"
+		/>
+		<path class="iso-face iso-face--xy" d="M57.6 18.6L36 28.8V7.2z" />
+		<path
+			class="iso-face iso-face--xz"
+			d="M36.001 14.4l-7.2 3.934 7.2 3.266 7.2-3.266z"
+		/>
+		<path
+			class="iso-face iso-face--xy"
+			d="M28.801 18.323v6.684l7.2 3.794v-7.2z"
+		/>
+		<path
+			class="iso-face iso-face--yz"
+			d="M43.2 18.323v6.806L36 28.8v-7.2zM57.6 46.779l-7.2 3.62v-7.2l7.2-3.513z"
+		/>
+	</g>
+</svg>

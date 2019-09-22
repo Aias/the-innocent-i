@@ -1,0 +1,36 @@
+main {
+	--border-width: 2px;
+	border-left: var(--border-width) solid var(--border);
+}
+
+.fragment-list {
+	list-style-type: none;
+	line-height: inherit;
+	padding: 0;
+}
+
+.fragment {
+	display: flex;
+	position: relative;
+	left: calc((-1 * var(--gutter-width)) - var(--border-width));
+}
+
+.fragment:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+.fragment .gutter-left {
+	border-right: var(--border-width) solid var(--border);
+}
+
+.fragment__link {
+	text-decoration: none;
+	font-weight: var(--font-weight-bolder);
+	flex: 0 0 var(--gutter-width);
+	padding-right: var(--gutter-gap);
+	text-align: right;
+}
+
+.fragment__slug {
+	margin-top: 0;
+}

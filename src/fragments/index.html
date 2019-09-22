@@ -1,17 +1,20 @@
 ---
 title: every thing
 layout: site
+pageStyle: writing
 eleventyExcludeFromCollections: true
 ---
 
-<h2>{{ title }}</h2>
-
-<ul>
-	{%- for page in collections.all %}
-	<li>
-		<a href="{{ page.url }}">
-			{{page.data.title or page.fileSlug}}
-		</a>
+<ul class="fragment-list">
+	{%- for page in collections.all | sort(true, false, "date") %}
+	<li class="fragment">
+		<a class="fragment__link" href="{{ page.url }}">{{ loop.index }}</a>
+		<section>
+			<h3 class="fragment__slug">
+				{{page.data.title or page.fileSlug}}
+			</h3>
+			{{ page.templateContent | safe }}
+		</section>
 	</li>
 	{% endfor %}
 </ul>
