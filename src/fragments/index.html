@@ -10,9 +10,11 @@ eleventyExcludeFromCollections: true
 	<li class="fragment">
 		<a class="fragment__link" href="{{ page.url }}">{{ loop.index }}</a>
 		<section>
+			{% if page.data.title %}
 			<h3 class="fragment__slug">
-				{{page.data.title or page.fileSlug}}
+				{{ page.data.title }}
 			</h3>
+			{% endif %}
 			{{ page.templateContent | safe }}
 		</section>
 	</li>
