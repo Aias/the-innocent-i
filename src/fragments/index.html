@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 <ul class="fragment-list">
 	{%- for page in collections.all | sort(true, false, "date") %}
 	<li class="fragment">
-		<a class="fragment__link" href="{{ page.url }}">{{ loop.index }}</a>
+		<a class="fragment__link" href="{{ page.url }}">{{ loop.revindex }}</a>
 		<section>
 			{% if page.data.title %}
 			<h3 class="fragment__slug">
