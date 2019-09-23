@@ -10,7 +10,8 @@ body {
 	display: grid;
 	grid-template-columns:
 		[gutter-left-start] var(--gutter-width)
-		[gutter-left-end header-start main-start] repeat(auto-fit, 2rem)
+		[gutter-left-end gutter-gap-start] var(--gutter-gap)
+		[gutter-gap-end header-start main-start] repeat(auto-fit, 2rem)
 		[main-end header-end];
 	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
 	grid-row-gap: 4rem;
@@ -37,10 +38,6 @@ header {
 main {
 	grid-area: main;
 	max-width: var(--content-width);
-	position: relative;
-	margin-left: var(--gutter-gap);
-	padding-left: calc(var(--gutter-gap) / 2);
-	left: calc(-1 * var(--gutter-gap) / 2);
 }
 
 .gutter-left {
@@ -81,6 +78,11 @@ main {
 
 	body {
 		margin-bottom: 4rem;
+		grid-template-columns:
+			[gutter-left-start main-start] var(--gutter-width)
+			[gutter-left-end gutter-gap-start] var(--gutter-gap)
+			[gutter-gap-end header-start] repeat(auto-fit, 2rem)
+			[main-end header-end];
 	}
 
 	.splash {

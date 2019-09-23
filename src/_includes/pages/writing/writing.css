@@ -1,6 +1,15 @@
 main {
 	--border-width: 2px;
 	border-left: var(--border-width) solid var(--border);
+	padding-left: calc(var(--gutter-gap) / 2);
+	margin-left: calc(-1 * var(--gutter-gap) / 2);
+}
+
+@media (max-width: 600px) {
+	main {
+		padding-left: calc(var(--gutter-gap) / 2);
+		margin-left: var(--gutter-gap);
+	}
 }
 
 .fragment-list {
@@ -10,9 +19,11 @@ main {
 }
 
 .fragment {
+	--width: calc(var(--gutter-width) + var(--border-width));
 	display: flex;
 	position: relative;
-	left: calc((-1 * var(--gutter-width)) - var(--border-width));
+	left: calc(-1 * var(--width));
+	width: calc(100% + var(--width));
 }
 
 .fragment:not(:last-child) {

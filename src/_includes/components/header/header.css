@@ -1,10 +1,10 @@
 .site-header {
 	display: flex;
-	margin-left: var(--gutter-gap);
 }
 
 .logo {
-	width: 6rem;
+	width: 100%;
+	max-width: 6rem;
 }
 
 .logo .iso-face {
