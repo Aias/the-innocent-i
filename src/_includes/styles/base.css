@@ -27,7 +27,6 @@ body {
 	grid-column: gutter-left;
 	justify-self: end;
 	grid-row: header;
-	padding: 0.5rem 0;
 }
 
 header {
