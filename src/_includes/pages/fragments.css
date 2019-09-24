@@ -1,17 +1,3 @@
-main {
-	--border-width: 2px;
-	border-left: var(--border-width) solid var(--border);
-	padding-left: calc(var(--gutter-gap) / 2);
-	margin-left: calc(-1 * var(--gutter-gap) / 2);
-}
-
-@media (max-width: 600px) {
-	main {
-		padding-left: calc(var(--gutter-gap) / 2);
-		margin-left: var(--gutter-gap);
-	}
-}
-
 .fragment-list {
 	list-style-type: none;
 	line-height: inherit;
@@ -19,26 +5,30 @@ main {
 }
 
 .fragment {
-	--width: calc(var(--gutter-width) + var(--border-width));
-	display: flex;
+	--offset: calc(-1 * var(--gutter-gap) / 2);
 	position: relative;
-	left: calc(-1 * var(--width));
-	width: calc(100% + var(--width));
+	border-left: 2px solid var(--border);
+	padding-left: calc(-1 * var(--offset));
+	left: var(--offset);
+	width: calc(100% - var(--offset));
+}
+
+@media (max-width: 600px) {
+	.fragment {
+		--offset: calc(var(--body-padding) + 1rem);
+		padding-left: 1rem;
+	}
 }
 
 .fragment:not(:last-child) {
 	margin-bottom: 4rem;
 }
 
-.fragment .gutter-left {
-	border-right: var(--border-width) solid var(--border);
-}
-
 .fragment__link {
+	position: absolute;
+	right: calc(100% + (var(--gutter-gap) / 2));
 	text-decoration: none;
 	font-weight: var(--font-weight-bolder);
-	flex: 0 0 var(--gutter-width);
-	padding-right: var(--gutter-gap);
 	text-align: right;
 }
 
