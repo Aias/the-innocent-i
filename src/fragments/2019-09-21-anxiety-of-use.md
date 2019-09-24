@@ -1,10 +1,3 @@
----
-title: anxiety of use
-description:
-date: 2019-09-21
-tags:
----
-
 Even if a user can effectively 'stumble through' a system, it may still be poorly designed. Pass/fail usability tests mean little without associated emotional data. A well-designed system requires both that the user is able to do what they need to do, and also feel confident in doing so. There are too many products I use and too many instructions I follow where I get the right thing done, but feel hesitant every step of the way, constantly wondering if I’m doing it right until the sigh of relief at the very end. Good design does not cause anxiety.
 
 This could happen if the constraints provided by the system encourage the correct action, but the user’s conceptual model does not match the system model. There is a nervous cognitive dissonance that happens when the right things get done but the mind does not follow.

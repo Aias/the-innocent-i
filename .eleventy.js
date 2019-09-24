@@ -24,6 +24,10 @@ module.exports = function(eleventyConfig) {
 		);
 	});
 
+	eleventyConfig.addFilter('slugToTitle', slugString => {
+		return slugString.replace(/-/g, ' ');
+	});
+
 	/* Markdown plugins */
 	let markdownIt = require('markdown-it');
 	let markdownItAnchor = require('markdown-it-anchor');
@@ -54,7 +58,7 @@ module.exports = function(eleventyConfig) {
 	return {
 		templateFormats: ['html', 'liquid', 'md', 'njk'],
 		pathPrefix: '/',
-		markdownTemplateEngine: 'liquid',
+		markdownTemplateEngine: 'njk',
 		htmlTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',
 		passthroughFileCopy: true,

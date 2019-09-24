@@ -1,10 +1,3 @@
----
-title: why we write the code
-description:
-date: 2019-09-23
-tags:
----
-
 > We often write code to distract ourselves from the fact we don’t know what we’re building.
 >
 > <cite>Swizec Teller, *[Building Software is a Distraction](https://swizec.com/blog/building-software-is-a-distraction/swizec/9200)*</cite>
