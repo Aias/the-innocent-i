@@ -1,5 +1,5 @@
 {
 	"layout": "fragment",
 	"tags": ["fragments"],
-	"permalink": "/fragments/{{ page.fileSlug }}/index.html"
+	"permalink": "{{ page.filePathStem }}/index.html"
 }
