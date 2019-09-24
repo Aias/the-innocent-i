@@ -5,7 +5,7 @@ pageStyle: writing
 eleventyExcludeFromCollections: true
 ---
 
-<ul class="fragment-list">
+<ol reversed class="fragment-list">
 	{%- for page in collections.all | sort(true, false, "date") %}
 	<li class="fragment">
 		<a class="fragment__link" href="{{ page.url }}">{{ loop.revindex }}</a>
@@ -19,4 +19,4 @@ eleventyExcludeFromCollections: true
 		</section>
 	</li>
 	{% endfor %}
-</ul>
+</ol>

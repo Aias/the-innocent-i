@@ -108,3 +108,7 @@ a {
 a:hover {
 	color: var(--theme-1);
 }
+
+.heading-link {
+	display: none;
+}
