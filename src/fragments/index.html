@@ -1,7 +1,7 @@
 ---
 title: fragments
 layout: site
-pageStyle: writing
+pageStyle: fragments
 eleventyExcludeFromCollections: true
 permalink: /{{ page.fileSlug }}/index.html
 ---
@@ -14,7 +14,9 @@ permalink: /{{ page.fileSlug }}/index.html
 			<h3 class="fragment__slug">
 				{{ page.data.title or (page.fileSlug | slugToTitle) }}
 			</h3>
-			{{ page.templateContent | safe }}
+			<div class="fragment__content">
+				{{ page.templateContent | safe }}
+			</div>
 		</section>
 	</li>
 	{% endfor %}
