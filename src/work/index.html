@@ -27,18 +27,20 @@ eleventyExcludeFromCollections: true
 	>.
 </p>
 
-<table>
-	<thead>
-		<tr>
-			<th>Project</th>
-			<th>Role</th>
-			<th>Field</th>
-			<th>Technologies</th>
-			<th>Tags</th>
-		</tr>
-	</thead>
-	<tbody id="project-list"></tbody>
-</table>
+<div class="projects-table">
+	<table>
+		<thead>
+			<tr>
+				<th>Project</th>
+				<th>Role</th>
+				<th>Field</th>
+				<th>Technologies</th>
+				<th>Tags</th>
+			</tr>
+		</thead>
+		<tbody id="project-list"></tbody>
+	</table>
+</div>
 
 <style>
 	main {
@@ -47,6 +49,11 @@ eleventyExcludeFromCollections: true
 
 	td:not(:first-child) {
 		font-size: var(--font-size-smaller);
+	}
+
+	.projects-table {
+		max-width: 100%;
+		overflow-x: auto;
 	}
 
 	.project--starred {
