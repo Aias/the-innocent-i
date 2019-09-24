@@ -12,7 +12,7 @@ body {
 		[gutter-left-start] var(--gutter-width)
 		[gutter-left-end gutter-gap-start] var(--gutter-gap)
 		[gutter-gap-end header-start main-start] repeat(auto-fit, 2rem)
-		[main-end header-end];
+		[main-end header-end] 4rem;
 	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
 	grid-row-gap: 4rem;
 	min-height: 100vh;
