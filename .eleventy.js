@@ -1,6 +1,6 @@
 // Most of this taken from:
 // https://github.com/11ty/eleventy-base-blog/blob/bbad06deaecd101a5e38ead1e59ad5087eccaf7a/.eleventy.js
-
+const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const CleanCSS = require('clean-css');
 
@@ -10,6 +10,18 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addFilter('cssmin', code => {
 		return new CleanCSS({}).minify(code).styles;
+	});
+
+	eleventyConfig.addFilter('readableDate', dateObj => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+			'dd LLL yyyy'
+		);
+	});
+
+	eleventyConfig.addFilter('htmlDateString', dateObj => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+			'yyyy-LL-dd'
+		);
 	});
 
 	/* Markdown plugins */
