@@ -13,13 +13,14 @@
 }
 
 .fragment__link {
+	--spacing: calc(var(--gutter-gap) / 2);
 	position: absolute;
-	right: calc(100% + (var(--gutter-gap) / 2));
+	right: calc(100% + var(--spacing));
 	top: 0;
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
-	padding-right: calc(var(--gutter-gap) / 2);
+	padding-right: var(--spacing);
 	border-right: 2px solid var(--border);
 	text-decoration: none;
 	text-align: right;
@@ -27,4 +28,17 @@
 
 .fragment__slug {
 	margin-top: 0;
+}
+
+@media (max-width: 600px) {
+	.fragment__link {
+		flex-direction: row;
+		display: block;
+		position: initial;
+		border-right: none;
+		box-shadow: 0 2px 0 var(--border);
+		padding-right: 0;
+		padding-bottom: var(--spacing);
+		margin-bottom: var(--spacing);
+	}
 }
