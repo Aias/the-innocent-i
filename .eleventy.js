@@ -1,6 +1,6 @@
 // Most of this taken from:
 // https://github.com/11ty/eleventy-base-blog/blob/bbad06deaecd101a5e38ead1e59ad5087eccaf7a/.eleventy.js
-const { DateTime } = require('luxon');
+const timeFormat = require('d3-time-format').timeFormat;
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const CleanCSS = require('clean-css');
 
@@ -12,29 +12,15 @@ module.exports = function(eleventyConfig) {
 		return new CleanCSS({}).minify(code).styles;
 	});
 
-	eleventyConfig.addFilter('readableDate', dateObj => {
-		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-			'dd LLL yyyy'
-		);
-	});
+	eleventyConfig.addFilter(
+		'formatTime',
+		(dateObj, specifier = '%Y-%m-%d') => {
+			let d = new Date(dateObj);
+			let format = timeFormat(specifier);
 
-	eleventyConfig.addFilter('htmlDateString', dateObj => {
-		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-			'yyyy-LL-dd'
-		);
-	});
-
-	eleventyConfig.addFilter('getYear', dateObj => {
-		return new Date(dateObj).getFullYear();
-	});
-
-	eleventyConfig.addFilter('getMonth', dateObj => {
-		return new Date(dateObj).getMonth() + 1;
-	});
-
-	eleventyConfig.addFilter('getDay', dateObj => {
-		return new Date(dateObj).getDate();
-	});
+			return format(d);
+		}
+	);
 
 	eleventyConfig.addFilter('slugToTitle', slugString => {
 		return slugString.replace(/-/g, ' ');
