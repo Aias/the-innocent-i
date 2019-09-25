@@ -99,6 +99,11 @@ pre:first-child {
 	margin-top: 0;
 }
 
+strong,
+.strong {
+	font-weight: var(--font-weight-bolder);
+}
+
 a {
 	line-height: inherit; /* Fixes bug where anchor tags add tiny bits of vertical space to their container. */
 	color: var(--theme-2);

@@ -7,9 +7,11 @@ permalink: /{{ page.fileSlug }}/index.html
 ---
 
 <ol reversed class="fragment-list">
-	{%- for page in collections.all | sort(true, false, "date") %}
+	{%- for page in collections.fragments | sort(true, false, "date") %}
 	<li class="fragment">
-		<a class="fragment__link" href="{{ page.url }}">{{ loop.revindex }}</a>
+		<a class="fragment__link strong" href="{{ page.url }}">{{
+			loop.revindex
+		}}</a>
 		<section>
 			<h3 class="fragment__slug">
 				{{ page.data.title or (page.fileSlug | slugToTitle) }}
