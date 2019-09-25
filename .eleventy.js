@@ -24,6 +24,18 @@ module.exports = function(eleventyConfig) {
 		);
 	});
 
+	eleventyConfig.addFilter('getYear', dateObj => {
+		return new Date(dateObj).getFullYear();
+	});
+
+	eleventyConfig.addFilter('getMonth', dateObj => {
+		return new Date(dateObj).getMonth() + 1;
+	});
+
+	eleventyConfig.addFilter('getDay', dateObj => {
+		return new Date(dateObj).getDate();
+	});
+
 	eleventyConfig.addFilter('slugToTitle', slugString => {
 		return slugString.replace(/-/g, ' ');
 	});
