@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
 	{{ fragment.url | url | absoluteUrl(metadata.url) }}
 	{% endset %}
 	<entry>
-		<title>{{ fragment.data.title }}</title>
+		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>
 		<link href="{{ absoluteFragmentUrl }}" />
 		<updated>{{ fragment.date | rssDate }}</updated>
 		<id>{{ absoluteFragmentUrl }}</id>

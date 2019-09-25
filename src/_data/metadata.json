@@ -4,7 +4,7 @@
 	"description": "images and words",
 	"keywords": "design, development, ux, making",
 	"feed": {
-		"title": "nicktrombley.design/feed",
+		"title": "nick trombley . design",
 		"subtitle": "images and words",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
@@ -15,5 +15,5 @@
 		"name": "Nick Trombley",
 		"email": "trombley.nick@gmail.com"
 	},
-	"themeColor": "#AD4111"
+	"themeColor": "#b0330e"
 }
