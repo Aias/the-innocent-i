@@ -77,14 +77,6 @@
 	--grid-face-bg: var(--gray-1);
 }
 
-.debug .grid-face--lined {
-	width: 1000vw;
-	height: 1000vh;
-	min-height: 0;
-	top: 0;
-	left: 0;
-}
-
 .debug .grid-face--xy {
 	--layer-grid: rgba(255, 0, 0, 0.5);
 }
