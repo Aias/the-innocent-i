@@ -1,12 +1,11 @@
 const path = require('path');
+const entry = require('webpack-glob-entry');
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
 module.exports = {
-	entry: {
-		bundle: ['./scripts/src/main.js']
-	},
+	entry: entry('./scripts/src/*.js'),
 	resolve: {
 		alias: {
 			svelte: path.resolve('node_modules', 'svelte')
@@ -16,6 +15,7 @@ module.exports = {
 	},
 	output: {
 		path: __dirname + '/scripts/public',
+		publicPath: '/scripts',
 		filename: '[name].js',
 		chunkFilename: '[name].[id].js'
 	},
