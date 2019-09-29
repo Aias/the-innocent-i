@@ -4,7 +4,7 @@
 
 <style>
 	h1 {
-		color: purple;
+		color: rgb(238, 226, 238);
 	}
 </style>
 
