@@ -28,7 +28,8 @@
 	},
 	"scripts": {
 		"dev": "npx @11ty/eleventy --serve",
-		"build": "npx @11ty/eleventy",
+		"build": "yarn build-scripts && yarn build-site",
+		"build-site": "npx @11ty/eleventy",
 		"build-scripts": "cross-env NODE_ENV=production webpack"
 	}
 }
