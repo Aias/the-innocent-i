@@ -52,7 +52,7 @@ module.exports = function(eleventyConfig) {
 
 	/* Static files (CSS, images, etc.) */
 	eleventyConfig.addPassthroughCopy('static');
-	eleventyConfig.addPassthroughCopy({ 'scripts/_dist': 'scripts' });
+	eleventyConfig.addPassthroughCopy({ 'scripts/public': 'scripts' });
 	eleventyConfig.addPassthroughCopy({ 'src/favicon.png': 'favicon.png' });
 
 	return {

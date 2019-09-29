@@ -5,7 +5,7 @@ const prod = mode === 'production';
 
 module.exports = {
 	entry: {
-		bundle: ['./scripts/main.js']
+		bundle: ['./scripts/src/main.js']
 	},
 	resolve: {
 		alias: {
@@ -15,7 +15,7 @@ module.exports = {
 		mainFields: ['svelte', 'browser', 'module', 'main']
 	},
 	output: {
-		path: __dirname + '/public',
+		path: __dirname + '/scripts/public',
 		filename: '[name].js',
 		chunkFilename: '[name].[id].js'
 	},
