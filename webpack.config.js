@@ -1,3 +1,6 @@
+// From https://github.com/sveltejs/template-webpack/blob/master/webpack.config.js
+
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const entry = require('webpack-glob-entry');
 
@@ -27,13 +30,28 @@ module.exports = {
 					loader: 'svelte-loader',
 					options: {
 						emitCss: false,
-						hotReload: true
+						hotReload: false
 					}
 				}
 			}
+			// {
+			// 	test: /\.css$/,
+			// 	use: [
+			// 		/**
+			// 		 * MiniCssExtractPlugin doesn't support HMR.
+			// 		 * For developing, use 'style-loader' instead.
+			// 		 * */
+			// 		prod ? MiniCssExtractPlugin.loader : 'style-loader',
+			// 		'css-loader'
+			// 	]
+			// }
 		]
 	},
 	mode,
-	// plugins: [],
+	// plugins: [
+	// 	new MiniCssExtractPlugin({
+	// 		filename: '[name].css'
+	// 	})
+	// ],
 	devtool: prod ? false : 'source-map'
 };

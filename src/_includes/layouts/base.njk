@@ -33,5 +33,7 @@
 	<body class="gridded">
 		{{ content | safe }}
 	</body>
-
+	{% if pageScript %}
+	<script src="/scripts/{{pageScript}}.js"></script>
+	{% endif %}
 </html>
