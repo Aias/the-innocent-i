@@ -1,7 +1,7 @@
 node_modules
 .DS_Store
-_site
-scripts/public
+scripts/src/**
+assets
 
 # Log files
 npm-debug.log*

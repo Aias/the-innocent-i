@@ -28,7 +28,9 @@
 		"webpack-glob-entry": "^2.1.1"
 	},
 	"scripts": {
-		"dev": "npx @11ty/eleventy --serve",
+		"dev": "yarn dev-scripts & yarn dev-site",
+		"dev-site": "npx @11ty/eleventy --serve",
+		"dev-scripts": "webpack --watch",
 		"build": "yarn build-scripts && yarn build-site",
 		"build-site": "npx @11ty/eleventy",
 		"build-scripts": "cross-env NODE_ENV=production webpack"

@@ -6,6 +6,7 @@ const CleanCSS = require('clean-css');
 
 module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
+	eleventyConfig.setUseGitIgnore(false); //https://github.com/11ty/eleventy/issues/483
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addFilter('cssmin', code => {
@@ -56,6 +57,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/favicon.png': 'favicon.png' });
 
 	return {
+		watchTriggerDelay: 200, // https://github.com/11ty/eleventy/pull/564
 		templateFormats: ['html', 'liquid', 'md', 'njk'],
 		pathPrefix: '/',
 		markdownTemplateEngine: 'njk',
