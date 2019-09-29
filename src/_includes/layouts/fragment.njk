@@ -3,7 +3,7 @@ layout: site
 ---
 <article>
 	<h2>
-		{{ title or 'untitled' }}
+		{{ title or (page.fileSlug | slugToTitle) }}
 	</h2>
 	{{ content | safe }}
 </article>
