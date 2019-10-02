@@ -9,11 +9,11 @@ body {
 	position: relative;
 	display: grid;
 	grid-template-columns:
-		[gutter-left-start] var(--gutter-width)
+		[gutter-left-start footer-start] var(--gutter-width)
 		[gutter-left-end gutter-gap-start] var(--gutter-gap)
 		[gutter-gap-end header-start main-start] repeat(auto-fit, 2rem)
-		[main-end header-end] 4rem;
-	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end];
+		[main-end header-end footer-end] 4rem;
+	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end footer-start] auto [footer-end];
 	grid-row-gap: 4rem;
 	min-height: 100vh;
 	font-size: var(--font-size-base);
@@ -37,6 +37,11 @@ header {
 main {
 	grid-area: main;
 	max-width: var(--content-width);
+}
+
+footer {
+	grid-area: footer;
+	text-align: center;
 }
 
 .gutter-left {
@@ -79,14 +84,15 @@ main {
 	body {
 		margin-bottom: 4rem;
 		grid-template-columns:
-			[gutter-left-start main-start] var(--gutter-width)
+			[gutter-left-start main-start footer-start] var(--gutter-width)
 			[gutter-left-end gutter-gap-start] var(--gutter-gap)
 			[gutter-gap-end header-start] repeat(auto-fit, 2rem)
-			[main-end header-end];
+			[main-end header-end footer-end];
 	}
 
 	.splash {
 		position: fixed;
+		z-index: 10;
 		top: initial;
 		right: initial;
 		bottom: initial;
