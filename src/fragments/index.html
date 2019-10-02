@@ -14,8 +14,8 @@ permalink: /{{ page.fileSlug }}/index.html
 	<li class="fragment">
 		<a class="fragment__link strong" href="{{ page.url }}">
 			<span>{{ pageDate | formatTime('%Y') }}</span>
-			<span>{{ pageDate | formatTime('%m') }}</span>
-			<span>{{ pageDate | formatTime('%d') }}</span>
+			<span>{{ pageDate | formatTime('%-m') }}</span>
+			<span>{{ pageDate | formatTime('%-d') }}</span>
 		</a>
 		<section>
 			<h3 class="fragment__slug">
