@@ -14,9 +14,7 @@ permalink: feed/feed.xml
 		<email>{{ metadata.author.email }}</email>
 	</author>
 	{%- for fragment in collections.fragments %}
-	{% set absoluteFragmentUrl %}
-	{{ fragment.url | url | absoluteUrl(metadata.url) }}
-	{% endset %}
+	{% set absoluteFragmentUrl %}{{ fragment.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>
 		<link href="{{ absoluteFragmentUrl }}" />
