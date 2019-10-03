@@ -1,1 +1,1 @@
-These collected notes represent just one possible description of our world(wideweb). A world that is the same, and will be the same, in this world again.
+These collected notes represent just one possible description of our world(wide web). A world that is the same, and will be the same, in this world again.
