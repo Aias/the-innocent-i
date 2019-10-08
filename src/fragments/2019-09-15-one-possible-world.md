@@ -1,1 +1,1 @@
-These collected notes represent just one possible description of our world(wide web). A world that is the same, and will be the same, in this world again.
+These loose notes are [one possible description of our world(wide web)](https://barnsworthburning.net/extracts/recUPqvklpbdy3pUD). A world that is and always will be the same, in the world again.
