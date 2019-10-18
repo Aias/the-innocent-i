@@ -3,12 +3,17 @@ title: fragments
 layout: site
 pageStyle: fragments
 eleventyExcludeFromCollections: true
-permalink: /{{ page.fileSlug }}/index.html
+permalink: /{{ page.fileSlug }}/{{ pagination.pageNumber + 1}}/index.html
+pagination:
+    data: collections.fragments
+    size: 5
+    alias: fragments
+    reverse: true
 ---
 
 <ol reversed class="fragment-list">
-	{%- for page in collections.fragments | sort(true, false, "date") %} {% set
-	pageDate %}{{
+	{%- for page in fragments | sort(true, false, "date") %} {% set pageDate
+	%}{{
 		page.date
 	}}{% endset %}
 	<li class="fragment">
@@ -28,3 +33,9 @@ permalink: /{{ page.fileSlug }}/index.html
 	</li>
 	{% endfor %}
 </ol>
+<div class="pagination" role="navigation">
+	<a href="{{ pagination.firstPageHref }}">Newest</a>
+	<a href="{{ pagination.previousPageHref }}">Newer</a>
+	<a href="{{ pagination.nextPageHref }}">Older</a>
+	<a href="{{ pagination.lastPageHref }}">Oldest</a>
+</div>

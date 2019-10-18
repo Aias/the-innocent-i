@@ -76,6 +76,15 @@ footer {
 	stroke-width: 2px;
 }
 
+.pagination {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.pagination > a {
+	margin: 0 0.5rem;
+}
+
 @media (max-width: 600px) {
 	:root {
 		--body-padding: 2rem;
