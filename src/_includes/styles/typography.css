@@ -59,7 +59,10 @@ pre {
 ul,
 ol {
 	margin: 1rem 0;
-	line-height: 3rem;
+}
+
+li + li {
+	margin-top: 1rem;
 }
 
 table {
