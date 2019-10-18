@@ -1,19 +1,22 @@
 {
 	"title": "the innocent i",
-	"url": "https://nicktrombley.design/",
+	"url": "https://the-innocent-i.net",
 	"description": "images and words",
 	"keywords": "design, development, ux, making",
+	"favicon": "/favicon.png",
+	"logo": "",
 	"feed": {
 		"title": "the innocent i",
-		"subtitle": "images and words",
+		"subtitle": "A collection of thoughts, findings, and images, usually longer than a tweet but shorter than a blog post.",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
-		"url": "https://nicktrombley.design/feed/feed.xml",
-		"id": "https://nicktrombley.design/"
+		"url": "https://the-innocent-i.net/feed/feed.xml",
+		"id": "https://the-innocent-i.net"
 	},
 	"author": {
 		"name": "Nick Trombley",
-		"email": "trombley.nick@gmail.com"
+		"email": "trombley.nick@gmail.com",
+		"url": "https://nicktrombley.design"
 	},
 	"themeColor": "#b0330e"
 }

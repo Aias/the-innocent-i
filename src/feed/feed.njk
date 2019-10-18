@@ -3,24 +3,25 @@ permalink: feed/feed.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+	<id>{{ metadata.feed.id }}</id>
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.feed.subtitle }}</subtitle>
 	<link href="{{ metadata.feed.url }}" rel="self" />
 	<link href="{{ metadata.url }}" />
-	<updated>{{ collections.fragments | rssLastUpdatedDate }}</updated>
-	<id>{{ metadata.feed.id }}</id>
 	<author>
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
+		<url>{{ metadata.author.url }}</url>
 	</author>
+	<updated>{{ collections.fragments | rssLastUpdatedDate }}</updated>
 	{%- for fragment in collections.fragments %}
 	{% set absoluteFragmentUrl %}{{ fragment.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
-		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>
-		<link href="{{ absoluteFragmentUrl }}" />
-		<updated>{{ fragment.date | rssDate }}</updated>
 		<id>{{ absoluteFragmentUrl }}</id>
-		<content type="html">{{ fragment.templateContent | htmlToAbsoluteUrls(absoluteFragmentUrl) | safe }}</content>
+		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>
+		<updated>{{ fragment.date | rssDate }}</updated>
+		<link rel="alternate" href="{{ absoluteFragmentUrl }}" />
+		<content type="html"><![CDATA[{{ fragment.templateContent | htmlToAbsoluteUrls(absoluteFragmentUrl) | safe }}]]></content>
 	</entry>
 	{%- endfor %}
 </feed>

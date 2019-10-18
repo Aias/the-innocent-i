@@ -37,9 +37,13 @@ pagination:
 	{% if pagination.pageNumber !== 0 %}
 	<!-- <a href="{{ pagination.firstPageHref }}">Newest</a> -->
 	{% endif %} {% if pagination.pageNumber > 0 %}
-	<a href="{{ pagination.previousPageHref }}">Newer</a>
+	<a href="{{ pagination.previousPageHref }}"
+		><span class="pointer" role="presentation">◂ </span>Newer</a
+	>
 	{% endif %} {% if pagination.pageNumber + 1 < (pagination.hrefs | length) %}
-	<a href="{{ pagination.nextPageHref }}">Older</a>
+	<a href="{{ pagination.nextPageHref }}"
+		>Older<span class="pointer" role="presentation"> ▸</span></a
+	>
 	{% endif %} {% if pagination.pageNumber + 1 !== (pagination.hrefs | length)
 	%}
 	<!-- <a href="{{ pagination.lastPageHref }}">Oldest</a> -->

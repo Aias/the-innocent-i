@@ -33,6 +33,7 @@ module.exports = function(eleventyConfig) {
 	let markdownItAttrs = require('markdown-it-attrs');
 	let markdownOpts = {
 		html: true,
+		xhtmlOut: true, // Self-close <br /> tags (this fixes a bug with the Atom feed.)
 		breaks: true,
 		linkify: true
 	};
