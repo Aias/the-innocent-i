@@ -18,8 +18,11 @@ permalink: feed/feed.xml
 	{% set absoluteFragmentUrl %}{{ fragment.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
 		<id>{{ absoluteFragmentUrl }}</id>
-		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>
-		<updated>{{ fragment.date | rssDate }}</updated>
+		<title>{{ fragment.data.title or (fragment.fileSlug | slugToTitle) }}</title>{% if fragment.data.description %}
+		<summary>{{ fragment.data.description }}</summary>{% endif %}
+		<published>{{ fragment.date | rssDate }}</published>
+		<updated>{{ (fragment.data.updated or fragment.date) | rssDate }}</updated>{% for tag in fragment.data.tags %}
+		<category term="{{ tag }}" />{% endfor %}
 		<link rel="alternate" href="{{ absoluteFragmentUrl }}" />
 		<content type="html"><![CDATA[{{ fragment.templateContent | htmlToAbsoluteUrls(absoluteFragmentUrl) | safe }}]]></content>
 	</entry>
