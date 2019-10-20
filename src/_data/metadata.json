@@ -4,7 +4,7 @@
 	"description": "images and words",
 	"keywords": "design, development, ux, making",
 	"favicon": "/favicon.png",
-	"logo": "",
+	"image": "/static/images/site.png",
 	"feed": {
 		"title": "the innocent i",
 		"subtitle": "A collection of thoughts, findings, and images, usually longer than a tweet but shorter than a blog post.",
