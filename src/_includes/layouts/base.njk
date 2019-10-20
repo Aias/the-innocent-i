@@ -2,26 +2,25 @@
 <html lang="en">
 	<head>
 		<!-- Meta Basics -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="icon" href="/favicon.png" type="image/x-icon" />
-		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml"
-			title="{{ metadata.feed.title }}">
-		<meta name="theme-color" content="{{ metadata.themeColor }}">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="alternate"	href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.feed.title }}">
 		<!-- SEO -->
 		<title>{{ renderData.title or title or metadata.title }}</title>
-		<meta name="description" content="{{ renderData.description or description or metadata.description }}" />
-		<meta name="keywords" content="{{ renderData.keywords or keywords or metadata.keywords }}" />
-		<meta name="robots" content="index,follow" />
+		<meta name="description"		content="{{ renderData.description or description or metadata.description }}">
+		<meta name="keywords"			content="{{ renderData.keywords or keywords or metadata.keywords }}">
+		<meta name="robots"				content="index,follow">
 		<!-- OpenGraph Tags -->
-		<meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
-		<meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-		<meta property="og:image" content="{{ renderData.image or image or metadata.image }}" />
-		<meta property="og:type" content="website" />
-		<!-- Layout / function -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="/site.css" />
+		<meta property="og:title"		content="{{ renderData.title or title or metadata.title }}">
+		<meta property="og:description"	content="{{ renderData.description or description or metadata.description }}">
+		<meta property="og:image"		content="{{ renderData.image or image or metadata.image }}">
+		<meta property="og:type"		content="website">
+		<!-- Rendering / Layout / Function -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500&display=swap">
+		<link rel="stylesheet" href="/site.css" type="text/css">
+		<meta name="theme-color" content="{{ metadata.themeColor }}">
+		<link rel="icon" href="/favicon.png" type="image/x-icon">
 		{% if pageStyle %}
 		<style type="text/css">
 		{% set css %}
