@@ -53,6 +53,8 @@ pre {
 
 pre {
 	padding: 0.5rem 2rem;
+	max-width: 100%;
+	overflow-x: auto;
 	background-color: var(--darker-1);
 }
 
