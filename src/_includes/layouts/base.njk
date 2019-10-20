@@ -4,7 +4,7 @@
 		<!-- Meta Basics -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="alternate"	href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.feed.title }}">
+		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.feed.title }}">
 		<!-- SEO -->
 		<title>{{ renderData.title or title or metadata.title }}</title>
 		<meta name="description"		content="{{ renderData.description or description or metadata.description }}">
@@ -20,14 +20,15 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500&display=swap">
 		<link rel="stylesheet" href="/site.css" type="text/css">
 		<meta name="theme-color" content="{{ metadata.themeColor }}">
-		<link rel="icon" href="/favicon.png" type="image/x-icon">
-		{% if pageStyle %}
-		<style type="text/css">
-		{% set css %}
-		{% include 'pages/' + pageStyle + '.css' %}
-		{% endset %}{{ css | cssmin | safe }}
-		</style>
-		{% endif %}
+		<link rel="icon" href="/favicon.png" type="image/x-icon">{% if pageStyle %}
+		<style type="text/css">{% set css %}{% include 'pages/' + pageStyle + '.css' %}{% endset %}
+			{{ css | cssmin | safe }}
+		</style>{% endif %}{% if pagination %}
+		<!-- Pagination -->
+		<link rel="first" href="{{ pagination.firstPageHref }}">
+		<link rel="prev" href="{{ pagination.previousPageHref }}">
+		<link rel="next" href="{{ pagination.nextPageHref }}">
+		<link rel="last" href="{{ pagination.lastPageHref }}">{% endif %}
 	</head>
 	<body class="gridded">
 		{{ content | safe }}
