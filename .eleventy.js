@@ -45,6 +45,15 @@ module.exports = function(eleventyConfig) {
 		// permalinkBefore: false
 	};
 
+	eleventyConfig.addCollection('fragments', collection => {
+		// I don't like that I have to specify src/ first here.
+		// Is this intentional behavior? Shouldn't it just default to the input directory?
+		return collection.getFilteredByGlob([
+			'src/fragments/*.md',
+			'src/fragments/*.html'
+		]);
+	});
+
 	eleventyConfig.setLibrary(
 		'md',
 		markdownIt(markdownOpts)

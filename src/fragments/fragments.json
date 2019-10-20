@@ -1,5 +1,4 @@
 {
 	"layout": "fragment",
-	"tags": ["fragments"],
 	"permalink": "{{ page.filePathStem }}/index.html"
 }
