@@ -1,5 +1,11 @@
 ---
 title: profiles
+description: Thoughts on a specification.
+tags:
+  - specifications
+  - web development
+  - love
+  - words
 ---
 The [XFN 1.1 relationships metadata profile](http://gmpg.org/xfn/11). Used like so:
 

@@ -1,5 +1,11 @@
 ---
 title: rotation
+description: A QA note for Apple Photos.
+tags:
+  - ux
+  - apple
+  - photography
+  - details
 ---
 Maybe I'm just paying more attention to Apple design stuff recently since all the new updates, but little discrepancies keep popping up in ways that don't really matter by themselves, but combined make it feel like they're wavering on their dedication to absolute perfection.
 

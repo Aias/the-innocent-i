@@ -1,5 +1,10 @@
 ---
 title: cream cheese
+description: A recipe for roasted garlic, bacon, and chive cream cheese.
+tags:
+  - food
+  - recipes
+  - technique
 ---
 
 A recipe for roasted garlic, bacon, and chive cream cheese. *Warning: Will not make people want to kiss you.*

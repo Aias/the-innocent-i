@@ -1,3 +1,11 @@
+---
+title: do not cross
+description: An installation art piece.
+tags:
+  - art
+  - society
+  - photography
+---
 An installation art piece for any sufficiently spacious venue, but preferably a heavily trafficked public place.
 
 The work consists of pairs of mannequins scattered about the space. In each pair, one poses while the other holds a camera. Strung between the cameras and their subjects are bands of yellow tape — **POLICE LINE, DO NOT CROSS**.
