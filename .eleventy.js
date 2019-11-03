@@ -2,17 +2,28 @@
 // https://github.com/11ty/eleventy-base-blog/blob/bbad06deaecd101a5e38ead1e59ad5087eccaf7a/.eleventy.js
 const timeFormat = require('d3-time-format').timeFormat;
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+// const pluginTypeset = require('eleventy-plugin-typeset');
 const CleanCSS = require('clean-css');
 
 module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
 	eleventyConfig.setUseGitIgnore(false); //https://github.com/11ty/eleventy/issues/483
 	eleventyConfig.setDataDeepMerge(true);
-	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addFilter('cssmin', code => {
-		return new CleanCSS({}).minify(code).styles;
-	});
 
+	/* Plugins */
+	eleventyConfig.addPlugin(pluginRss);
+
+	/* 
+		This won't work until eleventy-plugin-typeset
+		is fixed (PR currently open) 
+	*/
+	// eleventyConfig.addPlugin(
+	// 	pluginTypeset({
+	// 		only: 'article'
+	// 	})
+	// );
+
+	/* Filters */
 	eleventyConfig.addFilter(
 		'formatTime',
 		(dateObj, specifier = '%Y-%m-%d') => {
@@ -27,7 +38,11 @@ module.exports = function(eleventyConfig) {
 		return slugString.replace(/-/g, ' ');
 	});
 
-	/* Markdown plugins */
+	eleventyConfig.addFilter('cssmin', code => {
+		return new CleanCSS({}).minify(code).styles;
+	});
+
+	/* Markdown options */
 	let markdownIt = require('markdown-it');
 	let markdownItAnchor = require('markdown-it-anchor');
 	let markdownItAttrs = require('markdown-it-attrs');
@@ -45,15 +60,6 @@ module.exports = function(eleventyConfig) {
 		// permalinkBefore: false
 	};
 
-	eleventyConfig.addCollection('fragments', collection => {
-		// I don't like that I have to specify src/ first here.
-		// Is this intentional behavior? Shouldn't it just default to the input directory?
-		return collection.getFilteredByGlob([
-			'src/fragments/*.md',
-			'src/fragments/*.html'
-		]);
-	});
-
 	eleventyConfig.setLibrary(
 		'md',
 		markdownIt(markdownOpts)
@@ -65,6 +71,15 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('static');
 	eleventyConfig.addPassthroughCopy({ 'scripts/public': 'scripts' });
 	eleventyConfig.addPassthroughCopy({ 'src/favicon.png': 'favicon.png' });
+
+	eleventyConfig.addCollection('fragments', collection => {
+		// I don't like that I have to specify src/ first here.
+		// Is this intentional behavior? Shouldn't it just default to the input directory?
+		return collection.getFilteredByGlob([
+			'src/fragments/*.md',
+			'src/fragments/*.html'
+		]);
+	});
 
 	return {
 		watchTriggerDelay: 200, // https://github.com/11ty/eleventy/pull/564

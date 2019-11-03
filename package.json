@@ -18,6 +18,7 @@
 		"clean-css": "^4.2.1",
 		"cross-env": "^6.0.3",
 		"d3-time-format": "^2.2.1",
+		"eleventy-plugin-typeset": "^1.0.0",
 		"markdown-it": "^10.0.0",
 		"markdown-it-anchor": "^5.2.5",
 		"markdown-it-attrs": "^3.0.1",
