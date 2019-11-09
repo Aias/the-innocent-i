@@ -44,6 +44,10 @@ blockquote cite {
 	text-align: right;
 }
 
+.mono {
+	font-family: var(--font-stack-mono);
+}
+
 code,
 pre {
 	font-family: var(--font-stack-mono);
