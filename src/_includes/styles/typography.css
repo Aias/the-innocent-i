@@ -30,7 +30,7 @@ p {
 }
 
 blockquote {
-	margin: 0;
+	margin: 0 0 2rem 0;
 	padding-left: 1rem;
 	border-left: 1rem solid var(--layer-bg);
 	font-size: var(--font-size-smaller);
