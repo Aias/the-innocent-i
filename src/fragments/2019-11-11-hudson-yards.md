@@ -6,7 +6,7 @@ tags:
   - urban planning
 ---
 
-Earlier this year, the New York Times produced a characteristically stunning piece of interactive journalism that I'm just getting around to reading, titled "[Hudson Yards Is Manhattan’s Biggest, Newest, Slickest Gated Community. **Is This the Neighborhood New York Deserves**?](https://www.nytimes.com/interactive/2019/03/14/arts/design/hudson-yards-nyc.html)" In it, Michael Kimmelman outlines one of the more recent – and most visible – examples of the failure of contemporary architectural and urban planning practices to generate coherent places.
+Earlier this year, the New York Times produced a characteristically stunning piece of interactive journalism that I’m just getting around to reading, titled “[Hudson Yards Is Manhattan’s Biggest, Newest, Slickest Gated Community. **Is This the Neighborhood New York Deserves**?](https://www.nytimes.com/interactive/2019/03/14/arts/design/hudson-yards-nyc.html)” In it, Michael Kimmelman outlines one of the more recent – and most visible – examples of the failure of contemporary architectural and urban planning practices to generate coherent places.
 
 The essay ends with the following reflection.
 
@@ -19,7 +19,7 @@ The essay ends with the following reflection.
 > Then it occurred to me.
 > From that deck, you can’t see Hudson Yards.
 
-Which reminded me of one of my favorite passages from one of my favorite books, *[Wittgenstein's Mistress](https://barnsworthburning.net/works/recQqbleqCDPj8QvC)*, by David Markson.
+Which reminded me of one of my favorite passages from one of my favorite books, *[Wittgenstein’s Mistress](https://barnsworthburning.net/works/recQqbleqCDPj8QvC)*, by David Markson.
 
 > When the sun had gotten to the angle from which Phidias had taken his perspective, the Parthenon almost seemed to glow.
 > Actually, the best time to see that is generally also at four o’clock.
@@ -28,7 +28,7 @@ Which reminded me of one of my favorite passages from one of my favorite books, 
 > Such things can happen. As in the case of Guy de Maupassant, who ate his lunch every day at the Eiffel Tower.
 > Well, the point being that this was the only place in Paris from which he did not have to look at it.
 
-I can't seem to confirm or deny whether this particular story is apocryphal, but Maupassant does seem to have presaged Kimmelman's malaise.
+I can't seem to confirm or deny whether this particular story is apocryphal, but Maupassant does seem to have presaged Kimmelman’s malaise.
 
 > It wasn’t only the Eiffel Tower, however, that gave me an irresistible desire to live alone for a while, but **everything that was done around, inside, above and adjacent to it**. Really – how could all the newspapers speak to us of a new architecture in relation to this metallic carcass? Because architecture, the least understood and the most forgotten of the arts today is perhaps also the most aesthetic, the most mysterious and the most nourished with ideas.
 >

@@ -5,6 +5,6 @@ tags:
   - web design
   - ux
 ---
-Manually typing in a URL is, in many cases, an indication that your current location and your destination are linked somehow, but not in a way enabled by point-and-click navigation.
+Manually typing in a URL is usually an indication that your current location and your destination are linked somehow, but not in a way enabled by point-and-click navigation. Not predicted by the site’s creator.
 
-It's like creating a desire path between places on the web. Except we can never reach dirt.
+Imagine if our browsers supported this kind of spontaneous exploration. As we leave behind the predefined network, we begin to see our desire paths take shape.
