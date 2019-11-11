@@ -6,7 +6,7 @@ tags:
   - urban planning
 ---
 
-Earlier this year, the New York Times produced a characteristically stunning piece of interactive journalism that I’m just getting around to reading, titled “[Hudson Yards Is Manhattan’s Biggest, Newest, Slickest Gated Community. **Is This the Neighborhood New York Deserves**?](https://www.nytimes.com/interactive/2019/03/14/arts/design/hudson-yards-nyc.html)” In it, Michael Kimmelman outlines one of the more recent – and most visible – examples of the failure of contemporary architectural and urban planning practices to generate coherent places.
+Earlier this year, the New York Times produced a characteristically stunning piece of interactive journalism that I’m just getting around to reading, titled “[Hudson Yards Is Manhattan’s Biggest, Newest, Slickest Gated Community. **Is This the Neighborhood New York Deserves?**](https://www.nytimes.com/interactive/2019/03/14/arts/design/hudson-yards-nyc.html)” In it, Michael Kimmelman outlines one of the more recent – and most visible – examples of the failure of contemporary architectural and urban planning practices to generate coherent places.
 
 The essay ends with the following reflection.
 
