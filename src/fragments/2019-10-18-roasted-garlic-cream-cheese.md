@@ -16,7 +16,7 @@ You'll need to have:
 - 4 or 5 slices of thick cut **bacon**, preferably nothing too sweet.
 - Fresh **chives** (or scallions – your preference).
 - **Salt**. Big grains.
-- A little bit (like 1/2 tsp max) of something mildly spicy with good flavor. I'm a huge fan of **[gochugaru](https://www.mccormick.com/spices-and-flavors/gochugaru)**, but you could use paprika or chili powder I suppose.
+- A little bit (like 1/2 tsp., max) of something mildly spicy with good flavor. I'm a huge fan of **[gochugaru](https://www.mccormick.com/spices-and-flavors/gochugaru)**, but you could use paprika or chili powder I suppose.
 - Everything **bagels**.
 
 You'll need to do (pay close attention to steps 1–6. Everything depends on the garlic.):

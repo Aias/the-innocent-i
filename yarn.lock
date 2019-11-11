@@ -5687,10 +5687,10 @@ svelte-loader@^2.13.6:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte@^3.12.1:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.12.1.tgz#ddfacd43272ac3255907c682b74ee7d3d8b06b0c"
-  integrity sha512-t29WJNjHIqfrdMcVXqIyRfgLEaNz7MihKXTpb8qHlbzvf0WyOOIhIlwIGvl6ahJ9+9CLJwz0sjhFNAmPgo8BHg==
+svelte@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.13.0.tgz#a26ee9620b84613049406c4cacb1accf0bf962d1"
+  integrity sha512-BqIH6Q6li72goMRccIGlUqASVTBHf24YJ3mTXz0pDs6vP07o2Lv9bDGZgEPhO+zjO72dWJP5x3dLbGQt71P56g==
 
 symbol-observable@1.0.1:
   version "1.0.1"
@@ -6103,6 +6103,23 @@ watchpack@^1.6.0:
     chokidar "^2.0.2"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+
+webpack-cli@^3.3.10:
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.10.tgz#17b279267e9b4fb549023fae170da8e6e766da13"
+  integrity sha512-u1dgND9+MXaEt74sJR4PR7qkPxXUSQ0RXYq8x1L6Jg1MYVEmGPrH6Ah6C4arD4r0J1P5HKjRqpab36k0eIzPqg==
+  dependencies:
+    chalk "2.4.2"
+    cross-spawn "6.0.5"
+    enhanced-resolve "4.1.0"
+    findup-sync "3.0.0"
+    global-modules "2.0.0"
+    import-local "2.0.0"
+    interpret "1.2.0"
+    loader-utils "1.2.3"
+    supports-color "6.1.0"
+    v8-compile-cache "2.0.3"
+    yargs "13.2.4"
 
 webpack-cli@^3.3.9:
   version "3.3.9"

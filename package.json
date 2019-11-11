@@ -22,10 +22,10 @@
 		"markdown-it": "^10.0.0",
 		"markdown-it-anchor": "^5.2.5",
 		"markdown-it-attrs": "^3.0.1",
-		"svelte": "^3.12.1",
+		"svelte": "^3.13.0",
 		"svelte-loader": "^2.13.6",
 		"webpack": "^4.41.2",
-		"webpack-cli": "^3.3.9",
+		"webpack-cli": "^3.3.10",
 		"webpack-glob-entry": "^2.1.1"
 	},
 	"scripts": {
