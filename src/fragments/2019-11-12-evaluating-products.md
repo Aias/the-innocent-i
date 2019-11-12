@@ -34,8 +34,12 @@ I don’t think I’ve ever heard of a company using a question like this as the
 
 There’s still room for metrics here. Any robust design process should be informed by a healthy number of numbers. But when it comes to determining whether what we’ve made is good, there’s only one question which gets to the heart of the issue.
 
-Read also:
+### further reading
+
 - [Aesthetics][10] by Oliver Reichenstein
+- [When to Use Which User Research Methods][12], Nielsen-Norman Group
+- [Intuition vs. Data][13] by Matthew Ström
+- [Intuition Is the Key to Good Design][14] by Boris Müller
 
 [1]: https://en.wikipedia.org/wiki/Christopher_Alexander
 [2]: https://en.wikipedia.org/wiki/A_Pattern_Language
@@ -48,3 +52,6 @@ Read also:
 [9]: https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
 [10]: https://ia.net/topics/aesthetics
 [11]: https://www.nakedcapitalism.com/2013/04/notes-and-excursions-on-christopher-alexanders-the-battle-for-the-life-and-beauty-of-the-earth.html
+[12]: https://www.nngroup.com/articles/which-ux-research-methods/
+[13]: https://matthewstrom.com/writing/intuition/
+[14]: https://modus.medium.com/in-defence-of-intuition-f924ab82f76b
