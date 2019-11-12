@@ -8,6 +8,14 @@ tags:
   - process
 ---
 
+> The very first thing we did was spend two weeks just talking to different teachers and students, to get a feeling for their hopes and dreams. These talks were one-on-one and often lasted for an hour, for any one interview, during which we asked questions, talked, probed, explored dreams of an ideal campus, and tried to understand each person’s deepest visions as a teacher, or as a student.
+> 
+> This was not easy to do. It required much of both the interviewer and the person being interviewed. In the context of present-day Japan, where most schools are massive concrete boxes, with an asphalt playground on one side, it was hard to overcome this difficulty.  In any case, I always gently insisted. In answer to this kind of gentle invitation, most people would begin to say something. Relucantly, hesitatingly, often with some embarrassment, they would begin to describe their feelings about things — shyly, as if it was not allowed, or if it was crazy for them to attempt it. For example, one teacher said something like this to me: “I imagine walking by a stream, small streams and islands, perhaps bridges, and trees hanging in the water — a place where I can walk quietly and think about my class, or collect my thoughts as I prepare to teach.”
+> 
+> We shall see that many of these shyly presented, hesitating thoughts and feelings, were deeply true. They represented a real truth, which was demonstrated empirically once the school was built.
+> 
+> <cite>Christopher Alexander, *[The Battle for the Life and Beauty of the Earth][7]* <br/>(via [naked capitalism][11])</cite>
+
 For a designer looking towards their next role, questions on process may be the most interesting to think about (in the comfort of our own heads), but the hardest to articulate. One that get asked again and again, and seems to trip me up in different ways each time, is basically stated: **“How do you determine the success or failure of your designs once they’re built?”** The reason for asking this is obvious – as an employer, or a potential teammate, I want to know that you’re being proactive about evaluating your work, that you understand real-world performance is more important than any design-theoretical argument, and that it’s your end users who ultimately fuel the design engine.
 
 What I think most people are looking for when they ask this question is something in terms of hard numbers or rigorous processes: task completion times, number of clicks saved, conversion rates, SUS responses, time-in-app, etc... and so the “right” answer here would be something that allows us to measure these things objectively and compare the new version of the product to the old one – maybe that’s a task-based study, an A/B test, or an analysis of user tracking data. Gather the information before and after the new feature is released or the new design implemented, compare the two, see if you’re moving the needle in the right direction.
@@ -26,6 +34,9 @@ I don’t think I’ve ever heard of a company using a question like this as the
 
 There’s still room for metrics here. Any robust design process should be informed by a healthy number of numbers. But when it comes to determining whether what we’ve made is good, there’s only one question which gets to the heart of the issue.
 
+Read also:
+- [Aesthetics][10] by Oliver Reichenstein
+
 [1]: https://en.wikipedia.org/wiki/Christopher_Alexander
 [2]: https://en.wikipedia.org/wiki/A_Pattern_Language
 [3]: https://understandinggroup.com/dan-klyn
@@ -35,3 +46,5 @@ There’s still room for metrics here. Any robust design process should be infor
 [7]: https://www.amazon.com/Battle-Life-Beauty-Earth-World-Systems/dp/0199898073/
 [8]: https://www.linkedin.com/in/nick-trombley/
 [9]: https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
+[10]: https://ia.net/topics/aesthetics
+[11]: https://www.nakedcapitalism.com/2013/04/notes-and-excursions-on-christopher-alexanders-the-battle-for-the-life-and-beauty-of-the-earth.html
