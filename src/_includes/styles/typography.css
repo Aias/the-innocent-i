@@ -31,8 +31,7 @@ p {
 
 blockquote {
 	margin: 0 0 2rem 0;
-	padding-left: 1rem;
-	border-left: 1rem solid var(--layer-bg);
+	padding-left: 2rem;
 	font-size: var(--font-size-smaller);
 	font-style: italic;
 }
@@ -42,6 +41,11 @@ blockquote cite {
 	font-style: normal;
 	display: block;
 	text-align: right;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 0 2rem;
 }
 
 .mono {
