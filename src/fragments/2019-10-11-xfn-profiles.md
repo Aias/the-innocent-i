@@ -3,7 +3,7 @@ title: profiles
 description: Thoughts on a specification.
 tags:
   - specifications
-  - web development
+  - web-development
   - love
   - words
 ---

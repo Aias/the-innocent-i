@@ -50,13 +50,13 @@ module.exports = function(eleventyConfig) {
 		html: true,
 		xhtmlOut: true, // Self-close <br /> tags (this fixes a bug with the Atom feed.)
 		breaks: true,
-		linkify: true
+		linkify: true,
 	};
 	let anchorOpts = {
 		permalink: true,
 		permalinkClass: 'heading-link',
 		permalinkSymbol: '#',
-		permalinkSpace: false
+		permalinkSpace: false,
 		// permalinkBefore: false
 	};
 
@@ -77,9 +77,11 @@ module.exports = function(eleventyConfig) {
 		// Is this intentional behavior? Shouldn't it just default to the input directory?
 		return collection.getFilteredByGlob([
 			'src/fragments/*.md',
-			'src/fragments/*.html'
+			'src/fragments/*.html',
 		]);
 	});
+
+	eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
 
 	return {
 		watchTriggerDelay: 200, // https://github.com/11ty/eleventy/pull/564
@@ -94,7 +96,7 @@ module.exports = function(eleventyConfig) {
 			includes: '_includes',
 			layouts: '_includes/layouts',
 			data: '_data',
-			output: '_site'
-		}
+			output: '_site',
+		},
 	};
 };

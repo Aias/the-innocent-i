@@ -4,7 +4,7 @@ description: When people ask what this whole UX thing is all about.
 tags:
   - tv
   - ux
-  - web design
+  - web-design
 ---
 
 > **So, what do you do?**
