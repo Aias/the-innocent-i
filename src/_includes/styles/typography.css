@@ -37,7 +37,7 @@ blockquote {
 	font-style: italic;
 }
 
-blockquote cite {
+cite {
 	padding: 0.5rem 0;
 	font-style: normal;
 	display: block;
