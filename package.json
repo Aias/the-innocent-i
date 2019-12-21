@@ -12,7 +12,7 @@
 		"url": "https://nicktrombley.design/"
 	},
 	"license": "MIT",
-	"devDependencies": {
+	"dependencies": {
 		"@11ty/eleventy": "^0.9.0",
 		"@11ty/eleventy-plugin-rss": "^1.0.7",
 		"clean-css": "^4.2.1",
@@ -22,9 +22,9 @@
 		"markdown-it": "^10.0.0",
 		"markdown-it-anchor": "^5.2.5",
 		"markdown-it-attrs": "^3.0.1",
-		"svelte": "^3.16.1",
+		"svelte": "^3.16.5",
 		"svelte-loader": "^2.13.6",
-		"webpack": "^4.41.2",
+		"webpack": "^4.41.4",
 		"webpack-cli": "^3.3.10",
 		"webpack-glob-entry": "^2.1.1"
 	},
