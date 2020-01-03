@@ -13,11 +13,13 @@ module.exports = function(eleventyConfig) {
 	/* Plugins */
 	eleventyConfig.addPlugin(pluginRss);
 
-	eleventyConfig.addPlugin(
-		pluginTypeset({
-			only: 'article',
-		})
-	);
+	if (process.env.ELEVENTY_ENV === 'production') {
+		eleventyConfig.addPlugin(
+			pluginTypeset({
+				only: 'article',
+			})
+		);
+	}
 
 	/* Filters */
 	eleventyConfig.addFilter(

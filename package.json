@@ -30,10 +30,10 @@
 	},
 	"scripts": {
 		"dev-all": "yarn dev-scripts & yarn dev",
-		"dev": "npx @11ty/eleventy --serve",
+		"dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
 		"dev-scripts": "webpack --watch",
 		"build": "yarn build-scripts && yarn build-site",
-		"build-site": "npx @11ty/eleventy",
+		"build-site": "ELEVENTY_ENV=production npx @11ty/eleventy",
 		"build-scripts": "cross-env NODE_ENV=production webpack"
 	}
 }
