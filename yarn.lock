@@ -1414,10 +1414,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-d3-time-format@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/d3-time-format/-/d3-time-format-2.2.2.tgz#187597ffc6a0f37cb36bb7a1d7167cdc887ecda0"
-  integrity sha512-pweL2Ri2wqMY+wlW/wpkl8T3CUzKAha8S9nmiQlMABab8r5MJN0PD1V4YyRNVaKQfeh4Z0+VO70TLw6ESVOYzw==
+d3-time-format@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/d3-time-format/-/d3-time-format-2.2.3.tgz#0c9a12ee28342b2037e5ea1cf0b9eb4dd75f29cb"
+  integrity sha512-RAHNnD8+XvC4Zc4d2A56Uw0yJoM7bsvOlJR33bclxq399Rak/b9bhvu/InjxdWhPtkgU53JJcleJTGkNRnN6IA==
   dependencies:
     d3-time "1"
 
@@ -1779,10 +1779,9 @@ ejs@^2.6.2:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.1.tgz#5b5ab57f718b79d4aca9254457afecd36fa80228"
   integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
 
-eleventy-plugin-typeset@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-typeset/-/eleventy-plugin-typeset-1.0.0.tgz#189c82b520435a714a6d7d2c2f662b6ab4814706"
-  integrity sha512-6kjeNIcTtcUcOAwiegs3dvEXpX7n1w7LtsJb+RwSvzjrKjZwESFfUSLp7LruuGRfIOofWFAJMutD/Pg1qW4lyQ==
+"eleventy-plugin-typeset@github:liamfiddler/eleventy-plugin-typeset":
+  version "1.0.1"
+  resolved "https://codeload.github.com/liamfiddler/eleventy-plugin-typeset/tar.gz/f77c2d1f527a9f2ca624fe46547e4e95cf6ad768"
   dependencies:
     typeset "^0.2.2"
 
@@ -5692,10 +5691,10 @@ svelte-loader@^2.13.6:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte@^3.16.5:
-  version "3.16.5"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.16.5.tgz#d7073efcbf73ce6b112a858e17c81123ce9ec472"
-  integrity sha512-iYOhJc7iczaonycuKjPgmy1lthhBoDOQo5UVhgKJRd3XYRdnYPPb0LvvJ0t7jqu5+15S0msMm06WSOKUvhEZsw==
+svelte@^3.16.7:
+  version "3.16.7"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.16.7.tgz#9ade80a4bbbac95595c676dd817222f632fa2c07"
+  integrity sha512-egrva1UklB1n7KAv179IhDpQzMGAvubJUlOQ9PitmmZmAfrCUEgrQnx2vPxn2s+mGV3aYegXvJ/yQ35N2SfnYQ==
 
 symbol-observable@1.0.1:
   version "1.0.1"
@@ -6202,10 +6201,10 @@ webpack@^4.41.2:
     watchpack "^1.6.0"
     webpack-sources "^1.4.1"
 
-webpack@^4.41.4:
-  version "4.41.4"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.4.tgz#4bec4125224bdf50efa8be6226c19047599cd034"
-  integrity sha512-Lc+2uB6NjpCWsHI3trkoISOI64h9QYIXenbEWj3bn3oyjfB1lEBXjWAfAyY2sM0rZn41oD5V91OLwKRwS6Wp8Q==
+webpack@^4.41.5:
+  version "4.41.5"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.5.tgz#3210f1886bce5310e62bb97204d18c263341b77c"
+  integrity sha512-wp0Co4vpyumnp3KlkmpM5LWuzvZYayDwM2n17EHFr4qxBBbRokC7DJawPJC7TfSFZ9HZ6GsdH40EBj4UV0nmpw==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"

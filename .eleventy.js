@@ -2,7 +2,7 @@
 // https://github.com/11ty/eleventy-base-blog/blob/bbad06deaecd101a5e38ead1e59ad5087eccaf7a/.eleventy.js
 const timeFormat = require('d3-time-format').timeFormat;
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-// const pluginTypeset = require('eleventy-plugin-typeset');
+const pluginTypeset = require('eleventy-plugin-typeset');
 const CleanCSS = require('clean-css');
 
 module.exports = function(eleventyConfig) {
@@ -13,15 +13,11 @@ module.exports = function(eleventyConfig) {
 	/* Plugins */
 	eleventyConfig.addPlugin(pluginRss);
 
-	/* 
-		This won't work until eleventy-plugin-typeset
-		is fixed (PR currently open) 
-	*/
-	// eleventyConfig.addPlugin(
-	// 	pluginTypeset({
-	// 		only: 'article'
-	// 	})
-	// );
+	eleventyConfig.addPlugin(
+		pluginTypeset({
+			only: 'article',
+		})
+	);
 
 	/* Filters */
 	eleventyConfig.addFilter(
