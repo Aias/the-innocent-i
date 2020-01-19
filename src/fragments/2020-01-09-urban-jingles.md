@@ -1,6 +1,5 @@
 ---
 title: urban jingles
-source: knives out
 description: Urban planning reinforced by the sound of the city.
 tags:
   - planning
