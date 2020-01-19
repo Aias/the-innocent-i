@@ -28,5 +28,5 @@ By creating form we shape space. By making space we define form.
 
 In product design, or software design, consider the work not as the process of *adding functionality*, but instead as a process of *removing friction*. Like Michaelangelo, our job is to carve away everything in between our users and their goals, minimizing the distance between intent and execution wherever possible. This is good news, as it's often much easier to [recognize poor fit than it is to articulate good fit][notes], and so UX becomes a practice of eliminating bad experiences as much as it is about creating delightful ones.
 
-[sagrada]: https://res.cloudinary.com/aias/image/upload/v1579404221/the-innocent-i/sagrada-familia-barcelona-gaudi.png
+[sagrada]: https://res.cloudinary.com/aias/image/upload/c_scale,f_auto,q_auto:good,w_720/v1579404221/the-innocent-i/sagrada-familia-barcelona-gaudi.png
 [notes]: https://www.hup.harvard.edu/catalog.php?isbn=9780674627512
