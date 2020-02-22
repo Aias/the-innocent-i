@@ -11,9 +11,7 @@ pagination:
 
 <ol reversed class="fragment-list">
 	{%- for page in fragments | sort(true, false, "date") %} {% set pageDate
-	%}{{
-		page.date
-	}}{% endset %}
+	%}{{ page.date }}{% endset %}
 	<li class="fragment">
 		<a class="fragment__link strong" href="{{ page.url }}">
 			<span>{{ pageDate | formatTime('%Y') }}</span>
