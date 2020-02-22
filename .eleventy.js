@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
 	eleventyConfig.setUseGitIgnore(false); //https://github.com/11ty/eleventy/issues/483
 	eleventyConfig.setDataDeepMerge(true);
+	eleventyConfig.setQuietMode(true);
 
 	/* Plugins */
 	eleventyConfig.addPlugin(pluginRss);
