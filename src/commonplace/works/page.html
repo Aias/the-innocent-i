@@ -1,0 +1,20 @@
+---
+layout: site
+pageStyle: fragments
+permalink: 'commonplace/works/{{ pagination.items[0].name | slugify }}/index.html'
+pagination:
+    data: commonplace.works.all
+    size: 1
+    alias: work
+    reverse: true
+---
+
+<h2>
+	{{ work.name | lower }}
+</h2>
+
+<p>This page and many others are still under construction.</p>
+
+<div>
+	{{ work | dump }}
+</div>

@@ -4,6 +4,7 @@ const timeFormat = require('d3-time-format').timeFormat;
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginTypeset = require('eleventy-plugin-typeset');
 const CleanCSS = require('clean-css');
+const string = require('string');
 
 module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
@@ -32,6 +33,16 @@ module.exports = function(eleventyConfig) {
 			return format(d);
 		}
 	);
+
+	// https://github.com/11ty/eleventy/issues/278#issuecomment-451036608
+	eleventyConfig.addFilter('slugify', input => {
+		if (!input) {
+			return false;
+		}
+		return string(input)
+			.slugify()
+			.toString();
+	});
 
 	eleventyConfig.addFilter('slugToTitle', slugString => {
 		return slugString.replace(/-/g, ' ');

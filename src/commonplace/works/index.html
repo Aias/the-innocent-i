@@ -1,0 +1,35 @@
+---
+layout: site
+pageStyle: fragments
+---
+
+<h2>
+	works
+</h2>
+
+<p>
+	This is a list of things people besides me have <br />
+	&Tab;  written, <br />
+	&Tab;  composed, <br />
+	&Tab;  recorded, <br />
+	&Tab;  drawn, <br />
+	&Tab;  painted, <br />
+	&Tab;  or otherwise created, <br />
+	and that I have found instructive or inspiring.
+</p>
+<br />
+<ul>
+	{% for work in commonplace.works.all | sort(false, false,
+	"creator_last_name") %}
+	<li>
+		<div>
+			<a href="{{ work.name | slugify }}">
+				{{ work.name }}
+			</a>
+		</div>
+		<div>
+			{{ work.creator_names | join(', ') }}
+		</div>
+	</li>
+	{% endfor %}
+</ul>
