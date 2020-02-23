@@ -18,3 +18,17 @@ pagination:
 <div>
 	{{ work | dump }}
 </div>
+
+{% for creatorId in work.creator %}
+{% set creator = commonplace.creators.byId[creatorId] %}
+<div>
+ {{ creator | dump }}
+</div>
+{% endfor %}
+
+{% for extractId in work.direct_extracts %}
+{% set extract = commonplace.extracts.byId[extractId] %}
+<div>
+ {{ extract | dump }}
+</div>
+{% endfor %}
