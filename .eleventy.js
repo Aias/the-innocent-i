@@ -6,6 +6,8 @@ const pluginTypeset = require('eleventy-plugin-typeset');
 const CleanCSS = require('clean-css');
 const string = require('string');
 
+const customShortcodes = require('./_11ty/customShortcodes');
+
 module.exports = function(eleventyConfig) {
 	/* Eleventy behavior */
 	eleventyConfig.setUseGitIgnore(false); //https://github.com/11ty/eleventy/issues/483
@@ -22,6 +24,11 @@ module.exports = function(eleventyConfig) {
 			})
 		);
 	}
+
+	/* Shortcodes */
+	Object.keys(customShortcodes).forEach(code => {
+		eleventyConfig.addShortcode(code, customShortcodes[code]);
+	});
 
 	/* Filters */
 	eleventyConfig.addFilter(

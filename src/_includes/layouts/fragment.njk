@@ -3,7 +3,8 @@ layout: site
 ---
 <article>
 	<h2>
-		{{ title or (page.fileSlug | slugToTitle) }}
+		{% set pageTitle = (title or (page.fileSlug | slugToTitle)) %}
+		{% split pageTitle %}
 	</h2>
 	{{ content | safe }}
 </article>

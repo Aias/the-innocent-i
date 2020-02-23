@@ -4,7 +4,9 @@ layout: site
 permalink: 404.html
 ---
 
-<h2>{{ title }}</h2>
+<h2>
+	{% split 'title' %}
+</h2>
 
 <p>
 	Looks like you've found a page that doesn't exist. You should

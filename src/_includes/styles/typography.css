@@ -133,3 +133,47 @@ a:hover {
 .heading-link {
 	display: none;
 }
+
+.split {
+	--box-size: 2rem;
+	display: block;
+	position: relative;
+	font-size: var(--font-size-smaller);
+	line-height: var(--box-size);
+	text-transform: uppercase;
+	font-weight: var(--font-weight-bolder);
+}
+
+.split::before {
+	display: block;
+	content: '';
+	position: absolute;
+	height: calc(var(--box-size) / 2);
+	width: calc(var(--box-size) * 2);
+	background-color: var(--theme-1);
+	bottom: 0;
+	z-index: 0;
+}
+
+.split-word {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.split-word .split-char:first-child {
+	background-color: var(--theme-1);
+}
+
+.split-char {
+	display: block;
+	width: var(--box-size);
+	height: var(--box-size);
+	text-align: center;
+	background-color: var(--gray-2);
+	color: var(--layer-bg);
+	border: 0.5px solid var(--layer-bg);
+	z-index: 1;
+}
