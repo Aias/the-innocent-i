@@ -142,6 +142,7 @@ a:hover {
 	line-height: var(--box-size);
 	text-transform: uppercase;
 	font-weight: var(--font-weight-bolder);
+	background-color: var(--clr-text-primary);
 }
 
 .split::before {
@@ -149,7 +150,7 @@ a:hover {
 	content: '';
 	position: absolute;
 	height: calc(var(--box-size) / 2);
-	width: calc(var(--box-size) * 2);
+	width: calc(var(--box-size) / 2);
 	background-color: var(--theme-1);
 	bottom: 0;
 	z-index: 0;
