@@ -17,8 +17,7 @@ pageStyle: fragments
 	&Tab;  or otherwise created, <br />
 	and that I have found instructive or inspiring.
 </p>
-<br />
-<ul>
+<ul style="margin-top: 2rem;">
 	{% for work in commonplace.works.all | sort(false, false,
 	"creator_last_name") %}
 	<li>
