@@ -22,6 +22,7 @@ h3 {
 	font-size: var(--font-size-base);
 	font-weight: var(--font-weight-bolder);
 	line-height: 2rem;
+	text-transform: lowercase;
 }
 
 p {
@@ -53,20 +54,38 @@ img {
 
 .mono {
 	font-family: var(--font-stack-mono);
+	font-size: 0.925em;
+	line-height: 2rem;
 }
 
 code,
 pre {
 	font-family: var(--font-stack-mono);
-	line-height: 2rem;
-	margin: 1rem 0;
+	font-size: 0.925em;
 }
 
 pre {
 	padding: 0.5rem 2rem;
+	margin: 1rem 0;
 	max-width: 100%;
 	overflow-x: auto;
 	background-color: var(--darker-1);
+}
+
+code {
+	display: inline-block;
+	line-height: 1.9rem; /* Unclear why, but in Firefox a 2rem line height slightly upsets the vertical rhythm for inline code elements. */
+	border-radius: 1rem;
+	padding: 0 0.5rem;
+	background-color: var(--darker-1);
+}
+
+pre > code {
+	display: block;
+	line-height: 2rem;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
 }
 
 ul,
@@ -142,7 +161,8 @@ a:hover {
 	line-height: var(--box-size);
 	text-transform: uppercase;
 	font-weight: var(--font-weight-bolder);
-	background-color: var(--clr-text-primary);
+	background-color: rgba(0, 0, 0, 0.03);
+	margin-bottom: 2rem;
 }
 
 .split::before {

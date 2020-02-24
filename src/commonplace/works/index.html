@@ -23,9 +23,8 @@ pageStyle: fragments
 	"creator_last_name") %}
 	<li>
 		<div>
-			<a href="{{ work.name | slugify }}">
-				{{ work.name }}
-			</a>
+			<a href="{{ work.name | slugify }}">{{ work.name }}</a>
+			<code style="margin-left: 0.5rem;">{{ work.num_extracts }}</code>
 		</div>
 		<div>
 			{{ work.creator_names | join(', ') }}
