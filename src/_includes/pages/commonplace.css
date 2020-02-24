@@ -1,0 +1,15 @@
+.creator-list {
+	list-style-type: none;
+	margin-top: 2rem;
+	padding: 0;
+}
+
+.creator-list h3 {
+	text-transform: none;
+	margin-top: 3rem;
+}
+
+.work-list {
+	list-style-type: none;
+	padding-left: 2rem;
+}

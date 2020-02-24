@@ -1,0 +1,39 @@
+---
+layout: site
+pageStyle: commonplace
+---
+
+<h2>
+	{% split 'works' %}
+</h2>
+
+<p>
+	This is a list of things people besides me have <br />
+	&Tab;  written, <br />
+	&Tab;  composed, <br />
+	&Tab;  recorded, <br />
+	&Tab;  drawn, <br />
+	&Tab;  painted, <br />
+	&Tab;  or otherwise created, <br />
+	and that I have found instructive or inspiring.
+</p>
+<ul class="creator-list">
+	{% for creator in commonplace.creators.all | sort(false, false, "last_name") %}
+	{% if creator.groups %}
+	<li>
+		<h3>{{ creator.full_name }}</h3>
+		<ul class="work-list">
+			{% for workId in creator.groups %}
+			{% set work = commonplace.works.byId[workId] %}
+			{% if work %}
+			<li>
+				<a href="{{ work.name | slugify }}">{{ work.name }}</a>
+				<code>{{ work.num_extracts }}</code>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>
