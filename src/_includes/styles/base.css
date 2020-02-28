@@ -14,8 +14,7 @@ body {
 		[gutter-left-end gutter-gap-start] var(--gutter-gap)
 		[gutter-gap-end header-start main-start] repeat(auto-fit, 2rem)
 		[main-end header-end footer-end] 4rem;
-	grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end footer-start] auto [footer-end];
-	grid-row-gap: 4rem;
+	grid-template-rows: [header-start] auto [header-end] 4rem [main-start] 1fr [main-end footer-start] auto [footer-end];
 	min-height: 100vh;
 	font-size: var(--font-size-base);
 	line-height: 2rem;
@@ -112,5 +111,30 @@ footer {
 		transform-origin: 0 0;
 		height: calc(100vw + 4rem);
 		width: 4rem;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		margin-bottom: 4rem;
+		grid-template-columns:
+			[gutter-left-start main-start header-start footer-start] var(
+				--gutter-width
+			)
+			[gutter-left-end gutter-gap-start] var(--gutter-gap)
+			[gutter-gap-end] repeat(auto-fit, 2rem)
+			[main-end header-end footer-end];
+		grid-template-rows: [logo-start] auto [logo-end] 2rem [header-start] auto [header-end] 4rem [main-start] 1fr [main-end footer-start] auto [footer-end];
+	}
+
+	.logo {
+		grid-row: logo;
+		grid-column: main;
+		justify-self: center;
+	}
+
+	.site-header {
+		text-align: center;
+		justify-content: center;
 	}
 }
