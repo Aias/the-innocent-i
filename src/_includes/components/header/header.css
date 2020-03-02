@@ -49,6 +49,10 @@ header ul {
 	display: inline-block;
 }
 
+.nav-item + .nav-item {
+	margin-top: 0;
+}
+
 .nav-item:not(:first-child)::before {
 	content: '   /   ';
 	white-space: pre;
