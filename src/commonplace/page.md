@@ -16,7 +16,7 @@ pagination:
 {% if work.direct_extracts %}
 {% for extractId in work.direct_extracts %}
 {% set extract = commonplace.extracts.byId[extractId] %}
-### {{ extract.title }}
+<h3 id="{{extract.title | slugify}}">{{ extract.title }}</h3>
 
 {{ extract.extract_text | safe }}
 {% endfor %}
