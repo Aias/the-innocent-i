@@ -198,3 +198,13 @@ a:hover {
 	border: 0.5px solid var(--layer-bg);
 	z-index: 1;
 }
+
+@media (max-width: 500px) {
+	:root {
+		--font-size-largest: calc(2.5rem); /* 30px */
+	}
+
+	h1 {
+		line-height: 3rem;
+	}
+}

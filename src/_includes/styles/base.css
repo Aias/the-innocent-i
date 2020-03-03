@@ -24,6 +24,8 @@ body {
 }
 
 .logo {
+	width: 100%;
+	max-width: 6rem;
 	grid-column: gutter-left;
 	justify-self: end;
 	grid-row: header;
@@ -124,17 +126,13 @@ footer {
 			[gutter-left-end gutter-gap-start] var(--gutter-gap)
 			[gutter-gap-end] repeat(auto-fit, 2rem)
 			[main-end header-end footer-end];
-		grid-template-rows: [logo-start] auto [logo-end] 2rem [header-start] auto [header-end] 4rem [main-start] 1fr [main-end footer-start] auto [footer-end];
+		grid-template-rows: [logo-start] auto [logo-end] 1rem [header-start] auto [header-end] 2rem [main-start] 1fr [main-end footer-start] auto [footer-end];
 	}
 
 	.logo {
+		max-width: 4rem;
 		grid-row: logo;
 		grid-column: main;
 		justify-self: center;
-	}
-
-	.site-header {
-		text-align: center;
-		justify-content: center;
 	}
 }

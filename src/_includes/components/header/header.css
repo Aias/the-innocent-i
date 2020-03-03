@@ -2,11 +2,6 @@
 	display: flex;
 }
 
-.logo {
-	width: 100%;
-	max-width: 6rem;
-}
-
 .logo .iso-face {
 	stroke: 1px solid var(--clr-text-primary);
 }
@@ -62,4 +57,37 @@ header ul {
 .nav-link {
 	text-decoration: none;
 	font-weight: var(--font-weight-bolder);
+}
+
+.nav-link__icon {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.site-header {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.nav-items {
+		margin: 0.5rem 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.nav-link__icon {
+		display: inline-block;
+		width: 6rem;
+		text-align: center;
+	}
+
+	.nav-link__label {
+		visibility: hidden;
+		display: inline-block;
+		width: 0;
+	}
+
+	.nav-item:not(:first-child)::before {
+		content: '/';
+	}
 }

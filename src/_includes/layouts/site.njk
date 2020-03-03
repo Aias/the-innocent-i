@@ -6,9 +6,9 @@ layout: base
 <main>
 	{{ content | safe }}
 </main>
-<div class="splash" role="presentation">
+<div class="splash" aria-hidden="true">
 	{% include 'components/splash.svg' %}
 </div>
-<footer>
-	<p style="display: none;">👁️</p>
+<footer style="display: none;">
+	<p>👁️</p>
 </footer>

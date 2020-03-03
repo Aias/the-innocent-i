@@ -12,14 +12,18 @@ pagination:
 <ol reversed class="fragment-list">
 	{%- for page in fragments | sort(true, false, "date") %}{% set pageDate %}{{
 	page.date }}{% endset %}
-	<li class="fragment">
-		<a class="fragment__link strong" href="{{ page.url }}">
-			<span>{{ pageDate | formatTime('%Y') }}</span>
-			<span>{{ pageDate | formatTime('%-m') }}</span>
-			<span>{{ pageDate | formatTime('%-d') }}</span>
+	<li class="fragment" aria-labelledby="fragment--{{ page.fileSlug }}">
+		<a
+			class="fragment__link strong"
+			aria-label="Direct link to post"
+			href="{{ page.url }}"
+		>
+			<span>{{ pageDate | formatTime('%Y') }}</span
+			><span>{{ pageDate | formatTime('%-m') }}</span
+			><span>{{ pageDate | formatTime('%-d') }}</span>
 		</a>
 		<section>
-			<h3 class="fragment__slug">
+			<h3 class="fragment__slug" id="fragment--{{ page.fileSlug }}">
 				{{ page.data.title or (page.fileSlug | slugToTitle) }}
 			</h3>
 			<div class="fragment__content">
@@ -29,16 +33,19 @@ pagination:
 	</li>
 	{% endfor %}
 </ol>
-<div class="pagination" role="navigation">
+<div class="pagination" role="navigation" aria-label="Pagination">
 	{% if pagination.pageNumber !== 0 %}
 	<!-- <a href="{{ pagination.firstPageHref }}">Newest</a> -->
 	{% endif %} {% if pagination.pageNumber > 0 %}
 	<a href="{{ pagination.previousPageHref }}"
-		><span class="pointer" role="presentation">◂ </span>Newer</a
+		><span class="pointer" role="presentation" aria-hidden="true">◂ </span
+		>Newer</a
 	>
 	{% endif %} {% if pagination.pageNumber + 1 < (pagination.hrefs | length) %}
 	<a href="{{ pagination.nextPageHref }}"
-		>Older<span class="pointer" role="presentation"> ▸</span></a
+		>Older<span class="pointer" role="presentation" aria-hidden="true">
+			▸</span
+		></a
 	>
 	{% endif %} {% if pagination.pageNumber + 1 !== (pagination.hrefs | length)
 	%}
