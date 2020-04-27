@@ -116,4 +116,4 @@ vocation = career + (identity, meaning)
 [dictionary]: https://jsomers.net/blog/dictionary
 [webster]: https://www.websters1913.com/words/Work
 [loser]: http://jsomers.net/blog/how-to-be-a-loser
-[poems]: https://barnsworthburning.net/works/recwyvMclASv0NMvG
+[poems]: https://barnsworthburning.net/works/japanese-death-poems

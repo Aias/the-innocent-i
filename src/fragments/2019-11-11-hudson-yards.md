@@ -19,7 +19,7 @@ The essay ends with the following reflection.
 > Then it occurred to me.
 > From that deck, you can’t see Hudson Yards.
 
-Which reminded me of one of my favorite passages from one of my favorite books, *[Wittgenstein’s Mistress](https://barnsworthburning.net/works/recQqbleqCDPj8QvC)*, by David Markson.
+Which reminded me of one of my favorite passages from one of my favorite books, *[Wittgenstein’s Mistress](https://barnsworthburning.net/works/wittgensteins-mistress)*, by David Markson.
 
 > When the sun had gotten to the angle from which Phidias had taken his perspective, the Parthenon almost seemed to glow.
 > Actually, the best time to see that is generally also at four o’clock.

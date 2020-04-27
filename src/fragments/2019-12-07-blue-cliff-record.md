@@ -29,4 +29,4 @@ Consider also: the Socratic Hypothesis and [the inherent meaning of words][meani
 [cliff]: https://en.wikipedia.org/wiki/Blue_Cliff_Record
 [willow]: https://www.thoughtco.com/phonaesthetics-word-sounds-1691471#mntl-sc-block_1-0-24
 [meaning]: https://www.trismegistos.com/
-[gods]: https://barnsworthburning.net/works/recFHuT9zxLSIREwO
+[gods]: https://barnsworthburning.net/works/gods-of-the-word
