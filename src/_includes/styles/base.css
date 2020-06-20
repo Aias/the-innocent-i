@@ -66,6 +66,7 @@ footer {
 	height: calc(100% + 2rem);
 	width: calc(4rem + 95vw - var(--total-width));
 	min-width: 4rem;
+	max-width: 40rem;
 }
 
 .splash > svg {
