@@ -24,6 +24,7 @@
 
 .site-title > a {
 	all: inherit;
+	color: var(--clr-text-primary);
 }
 
 .site-title > a:hover {

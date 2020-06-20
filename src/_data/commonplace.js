@@ -8,17 +8,17 @@ async function getTable(table, options = {}) {
 
 	let records = {
 		byId: {},
-		all: [],
+		all: []
 	};
 	let pages = await commonplace(table)
 		.select(allOps)
 		.eachPage((rows, fetchNextPage) => {
-			rows.forEach(record => {
+			rows.forEach((record) => {
 				const id = record.id;
 				const fields = record.fields;
 				const recordWithId = {
 					id,
-					...fields,
+					...fields
 				};
 
 				records.byId[id] = recordWithId;
@@ -31,16 +31,16 @@ async function getTable(table, options = {}) {
 	return records;
 }
 
-module.exports = async function() {
-	let extracts = await getTable('extracts');
-	let works = await getTable('groups');
-	let creators = await getTable('creators');
-	let spaces = await getTable('spaces');
-
-	return {
-		extracts,
-		works,
-		creators,
-		spaces,
-	};
+module.exports = async function () {
+	// let extracts = await getTable('extracts');
+	// let works = await getTable('groups');
+	// let creators = await getTable('creators');
+	// let spaces = await getTable('spaces');
+	//
+	// return {
+	// 	extracts,
+	// 	works,
+	// 	creators,
+	// 	spaces,
+	// };
 };

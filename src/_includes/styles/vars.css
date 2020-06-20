@@ -1,23 +1,18 @@
 :root {
 	/* System font stacks from https://gist.github.com/don1138/5761014 */
-	--font-stack-serif: 'Palatino Linotype', Palatino, Palladio,
-		'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style',
-		'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond',
-		'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook',
-		'Century Schoolbook L', Georgia, serif;
-	--font-stack-sans: Montserrat, Roboto, -apple-system, BlinkMacSystemFont,
-		Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-		Helvetica Neue, sans-serif;
-	--font-stack-mono: Consolas, 'Andale Mono WT', 'Andale Mono',
-		'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
-		'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-		'Courier New', Courier, monospace;
+	--font-stack-serif: 'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville,
+		'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond',
+		'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif;
+	--font-stack-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
+	--font-stack-mono: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+		'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New',
+		Courier, monospace;
 
-	--font-size-base: calc(4rem / 3); /* 16px */
-	--font-size-smaller: calc(7rem / 6); /* 14px */
+	--font-size-base: calc(4rem / 3);
+	--font-size-smaller: calc(7rem / 6);
 	--font-size-smallest: 1rem; /* 10px */
-	--font-size-larger: calc(7rem / 4); /* 21px */
-	--font-size-largest: 3rem; /* 36px */
+	--font-size-larger: calc(7rem / 4);
+	--font-size-largest: 3rem;
 
 	--font-weight-normal: 300;
 	--font-weight-bolder: 500;
@@ -32,18 +27,14 @@
 
 	--darker-1: rgba(0, 0, 0, 0.05);
 
-	--clr-text-primary: rgba(0, 0, 0, 0.9);
-	--clr-text-secondary: rgba(0, 0, 0, 0.65);
+	--clr-text-primary: hsla(0, 0%, 0%, 0.9);
+	--clr-text-secondary: hsla(0, 0%, 0%, 0.65);
 
-	--layer-bg: #edeceb;
+	--layer-bg: hsla(30, 5%, 91%, 1);
 	--layer-grid: rgba(255, 255, 255, 0.3);
 	--border: var(--clr-text-primary);
 
-	--x-line: linear-gradient(
-		to bottom,
-		var(--layer-grid) 1px,
-		transparent 1px
-	);
+	--x-line: linear-gradient(to bottom, var(--layer-grid) 1px, transparent 1px);
 	--y-line: linear-gradient(to right, var(--layer-grid) 1px, transparent 1px);
 	--xy-line: var(--x-line), var(--y-line);
 
@@ -52,9 +43,6 @@
 	--gutter-gap: var(--body-padding);
 	--content-width: 50rem;
 	--aside-width: 20rem;
-	--space-width: 25rem;
-	--total-width: calc(
-		var(--gutter-width) + var(--content-width) + var(--aside-width) +
-			var(--space-width)
-	);
+	--space-width: 20rem;
+	--total-width: calc(var(--gutter-width) + var(--content-width) + var(--aside-width) + var(--space-width));
 }

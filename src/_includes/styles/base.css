@@ -1,5 +1,5 @@
 html {
-	font-size: 75%;
+	font-size: 13px;
 	background-color: var(--layer-bg);
 	overflow-x: hidden;
 }
@@ -108,8 +108,7 @@ footer {
 		right: initial;
 		bottom: initial;
 		left: initial;
-		transform: rotate(90deg) translateY(calc(-100vw))
-			translateX(calc(100vh - 6rem));
+		transform: rotate(90deg) translateY(calc(-100vw)) translateX(calc(100vh - 6rem));
 		transform-origin: 0 0;
 		height: calc(100vw + 4rem);
 		width: 4rem;
@@ -120,9 +119,7 @@ footer {
 	body {
 		margin-bottom: 4rem;
 		grid-template-columns:
-			[gutter-left-start main-start header-start footer-start] var(
-				--gutter-width
-			)
+			[gutter-left-start main-start header-start footer-start] var(--gutter-width)
 			[gutter-left-end gutter-gap-start] var(--gutter-gap)
 			[gutter-gap-end] repeat(auto-fit, 2rem)
 			[main-end header-end footer-end];

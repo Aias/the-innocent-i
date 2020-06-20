@@ -10,9 +10,9 @@ View the source for this (and other projects) [on GitHub][github].
 
 ### colophon
 
-The Innocent I is built with [Eleventy][eleventy] and deployed via [Netlify][netlify]. Most blog posts are composed in markdown with [iA Writer][ia] before releasing to the wild. My [commonplace book][commonplace] is backed by an [Airtable][airtable] database.
+The Innocent I is built with [Eleventy][eleventy] and deployed via [Netlify][netlify]. Most blog posts are composed in markdown with [iA Writer][ia] before releasing to the wild.
 
-The original design was done in [Adobe XD][xd] over an afternoon at [Connel Coffee][connel] in Tokyo. It was heavily influenced by the style of a book I was reading at the time, Smiljan Radić's *[Every So Often A Talking Dog Appears][radic]*, overlaid with the [Whitelines gridded notebooks][whitelines] I have used religiously for many years. All horizontal and vertical elements of the site conform to the strict 12px square background grid, which is by far the the dominant visual motif, and constrains much of the site's design.
+The original design was done in [Adobe XD][xd] over an afternoon at [Connel Coffee][connel] in Tokyo. It was heavily influenced by the style of a book I was reading at the time, Smiljan Radić's *[Every So Often A Talking Dog Appears][radic]*, overlaid with the [Whitelines gridded notebooks][whitelines] I have used religiously for many years. All horizontal and vertical elements of the site conform to the strict 12px square background grid, which constrains much of the site's design.
 
 ### innocence
 
@@ -25,7 +25,7 @@ As Ruskin says, one has to strive, if one is to see [with the Innocent Eye][pye]
 [net]: https://nicktrombley.design
 [github]: https://github.com/Aias
 [ruskin]: http://www.gutenberg.org/files/30325/30325-h/30325-h.htm
-[pye]: https://the-innocent-i.net/commonplace/the-nature-and-aesthetics-of-design/#the-innocence-of-the-eye
+[pye]: https://barnsworthburning.net/works/the-nature-and-aesthetics-of-design#the-innocence-of-the-eye
 [eleventy]: https://www.11ty.dev/
 [netlify]: https://www.netlify.com/
 [xd]: https://www.adobe.com/products/xd.html
@@ -33,5 +33,3 @@ As Ruskin says, one has to strive, if one is to see [with the Innocent Eye][pye]
 [connel]: https://www.google.com/maps/place/Connel+Coffee/@35.674092,139.7292203,15z/data=!4m2!3m1!1s0x0:0x9ad8156acaa9541f?sa=X&ved=2ahUKEwivjfGok4zoAhVrhXIEHReWAgYQ_BIwCnoECBAQCA
 [radic]: https://www.amazon.com/Every-Often-Talking-Appears-Essays/dp/3960984871
 [whitelines]: https://www.whitelinespaper.com/
-[commonplace]: /commonplace
-[airtable]: https://airtable.com/
