@@ -39,5 +39,5 @@ Though the rail was closed to traffic in December 2001, it wasn’t officially a
 
 [hyperart]: https://kaya.com/books/hyperart-thomasson/
 [saluda]: https://www.ncpedia.org/saluda-grade
-[infra]: https://the-innocent-i.net/commonplace/infrastructure-a-guide-to-the-industrial-landscape/
+[infra]: https://barnsworthburning.net/works/infrastructure-a-guide-to-the-industrial-landscape
 [harold]: https://www.gutenberg.org/files/5131/5131-h/5131-h.htm
