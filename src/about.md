@@ -12,20 +12,20 @@ View the source for this (and other projects) [on GitHub][github].
 
 The Innocent I is built with [Eleventy][eleventy] and deployed via [Netlify][netlify]. Most blog posts are composed in markdown with [iA Writer][ia] before releasing to the wild.
 
-The original design was done in [Adobe XD][xd] over an afternoon at [Connel Coffee][connel] in Tokyo. It was heavily influenced by the style of a book I was reading at the time, Smiljan Radić's *[Every So Often A Talking Dog Appears][radic]*, overlaid with the [Whitelines gridded notebooks][whitelines] I have used religiously for many years. All horizontal and vertical elements of the site conform to the strict 12px square background grid, which constrains much of the site's design.
+The original design was done in [Adobe XD][xd] over an afternoon at [Connel Coffee][connel] in Tokyo. It was heavily influenced by the style of a book I was reading at the time, Smiljan Radić's _[Every So Often A Talking Dog Appears][radic]_, overlaid with the [Whitelines gridded notebooks][whitelines] I have used religiously for many years. All horizontal and vertical elements of the site conform to the strict 12px square background grid, which constrains much of the site's design.
 
 ### innocence
 
-The title of this site comes from John Ruskin, *[The Elements of Drawing][ruskin]*.
+The title of this site comes from John Ruskin, _[The Elements of Drawing][ruskin]_.
 
-> The perception of solid form is entirely a matter of experience. We *see* nothing but flat colors; and it is only by a series of experiments that we find out that a stain of black or grey indicates the dark side of a solid substance... The whole technical power of painting depends on our recovery of what may be called the __innocence of the eye__; that is to say, of a sort of childish perception of these flat stains of color, merely as such, without consciousness of what they signify, as a blind man would see them if suddenly gifted with sight.
+> The perception of solid form is entirely a matter of experience. We _see_ nothing but flat colors; and it is only by a series of experiments that we find out that a stain of black or grey indicates the dark side of a solid substance... The whole technical power of painting depends on our recovery of what may be called the **innocence of the eye**; that is to say, of a sort of childish perception of these flat stains of color, merely as such, without consciousness of what they signify, as a blind man would see them if suddenly gifted with sight.
 
 As Ruskin says, one has to strive, if one is to see [with the Innocent Eye][pye].
 
 [net]: https://nicktrombley.design
 [github]: https://github.com/Aias
 [ruskin]: http://www.gutenberg.org/files/30325/30325-h/30325-h.htm
-[pye]: https://barnsworthburning.net/works/the-nature-and-aesthetics-of-design#the-innocence-of-the-eye
+[pye]: https://barnsworthburning.net/creators/david-pye/the-skill-of-perception
 [eleventy]: https://www.11ty.dev/
 [netlify]: https://www.netlify.com/
 [xd]: https://www.adobe.com/products/xd.html
